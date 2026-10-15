@@ -1,0 +1,1547 @@
+{
+ "checkedAt": "2026-10-13T06:56:48.391Z",
+ "results": {
+  "ai.com.mcp/skills-search": {
+   "status": "dead",
+   "ms": 856,
+   "error": "ENOTFOUND",
+   "at": "2026-10-13T06:52:31.499Z"
+  },
+  "com.puter/mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1060,
+   "at": "2026-10-13T06:52:31.702Z"
+  },
+  "dev.ohmyposh/validator": {
+   "status": "ok",
+   "http": 200,
+   "ms": 1566,
+   "at": "2026-10-13T06:52:33.066Z"
+  },
+  "com.apify/apify-mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1398,
+   "at": "2026-10-13T06:52:34.464Z"
+  },
+  "com.gitdiagram/gitdiagram": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2961,
+   "at": "2026-10-13T06:52:34.663Z"
+  },
+  "dev.openstatus/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1037,
+   "at": "2026-10-13T06:52:35.501Z"
+  },
+  "com.openworklabs/openwork": {
+   "status": "auth",
+   "http": 401,
+   "ms": 6338,
+   "at": "2026-10-13T06:52:36.983Z"
+  },
+  "app.worldmonitor/mcp": {
+   "status": "dead",
+   "ms": 10010,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:52:40.569Z"
+  },
+  "ai.com.mcp/registry": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2533,
+   "at": "2026-10-13T06:52:43.102Z"
+  },
+  "agency.ottobot/licensed-house-painters": {
+   "status": "ok",
+   "http": 200,
+   "ms": 7210,
+   "at": "2026-10-13T06:52:44.193Z"
+  },
+  "agency.ottobot/business-contact-finder": {
+   "status": "dead",
+   "ms": 10007,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:52:44.670Z"
+  },
+  "agency.ottobot/contractor-license-changes": {
+   "status": "dead",
+   "ms": 10008,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:52:45.509Z"
+  },
+  "cloud.basebalance/basebalance": {
+   "status": "error",
+   "http": 404,
+   "ms": 2671,
+   "at": "2026-10-13T06:52:45.773Z"
+  },
+  "io.github.BuilderIO/agent-native-calendar": {
+   "status": "auth",
+   "http": 401,
+   "ms": 5574,
+   "at": "2026-10-13T06:52:51.347Z"
+  },
+  "io.github.BuilderIO/agent-native-analytics": {
+   "status": "dead",
+   "ms": 10073,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:52:54.266Z"
+  },
+  "io.github.BuilderIO/agent-native-assets": {
+   "status": "dead",
+   "ms": 10009,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:52:54.679Z"
+  },
+  "io.github.BuilderIO/agent-native-brain": {
+   "status": "dead",
+   "ms": 10009,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:52:55.518Z"
+  },
+  "io.github.BuilderIO/agent-native-content": {
+   "status": "auth",
+   "http": 401,
+   "ms": 4091,
+   "at": "2026-10-13T06:52:58.770Z"
+  },
+  "io.github.BuilderIO/agent-native-chat": {
+   "status": "dead",
+   "ms": 10005,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:53:01.352Z"
+  },
+  "io.github.BuilderIO/agent-native-clips": {
+   "status": "dead",
+   "ms": 10016,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:53:04.282Z"
+  },
+  "io.github.BuilderIO/agent-native-design": {
+   "status": "dead",
+   "ms": 10007,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:53:05.525Z"
+  },
+  "io.github.BuilderIO/agent-native-mail": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1448,
+   "at": "2026-10-13T06:53:05.730Z"
+  },
+  "io.github.BuilderIO/agent-native-dispatch": {
+   "status": "dead",
+   "ms": 10014,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:53:08.784Z"
+  },
+  "io.github.BuilderIO/agent-native-plan": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3906,
+   "at": "2026-10-13T06:53:09.431Z"
+  },
+  "io.github.BuilderIO/agent-native-forms": {
+   "status": "dead",
+   "ms": 10003,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:53:11.355Z"
+  },
+  "io.github.BuilderIO/agent-native-slides": {
+   "status": "auth",
+   "http": 401,
+   "ms": 5789,
+   "at": "2026-10-13T06:53:11.519Z"
+  },
+  "io.draw/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2149,
+   "at": "2026-10-13T06:53:11.580Z"
+  },
+  "ai.klavis/strata": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3254,
+   "at": "2026-10-13T06:53:12.038Z"
+  },
+  "ai.exa/exa": {
+   "status": "ok",
+   "http": 200,
+   "ms": 749,
+   "at": "2026-10-13T06:53:12.105Z"
+  },
+  "com.cloudflare.mcp/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 1843,
+   "at": "2026-10-13T06:53:13.423Z"
+  },
+  "com.jitsu/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3371,
+   "at": "2026-10-13T06:53:14.890Z"
+  },
+  "com.supabase/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2942,
+   "at": "2026-10-13T06:53:15.047Z"
+  },
+  "ai.smithery/browserbasehq-mcp-browserbase": {
+   "status": "error",
+   "http": 404,
+   "ms": 3927,
+   "at": "2026-10-13T06:53:15.965Z"
+  },
+  "com.omnara/omnara": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3930,
+   "at": "2026-10-13T06:53:17.353Z"
+  },
+  "com.medplum/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3334,
+   "at": "2026-10-13T06:53:18.381Z"
+  },
+  "com.figma.mcp/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2474,
+   "at": "2026-10-13T06:53:20.855Z"
+  },
+  "io.appllama/appllama": {
+   "status": "auth",
+   "http": 401,
+   "ms": 5257,
+   "at": "2026-10-13T06:53:21.222Z"
+  },
+  "ai.vexa/vexa": {
+   "status": "auth",
+   "http": 401,
+   "ms": 6410,
+   "at": "2026-10-13T06:53:21.300Z"
+  },
+  "com.microsoft/microsoft-learn-mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 653,
+   "at": "2026-10-13T06:53:21.508Z"
+  },
+  "com.stripe/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 667,
+   "at": "2026-10-13T06:53:21.889Z"
+  },
+  "com.empryo/docs": {
+   "status": "ok",
+   "http": 200,
+   "ms": 3536,
+   "at": "2026-10-13T06:53:25.425Z"
+  },
+  "dev.emailmd/emailmd": {
+   "status": "ok",
+   "http": 200,
+   "ms": 5543,
+   "at": "2026-10-13T06:53:27.051Z"
+  },
+  "com.boostedchat/travel": {
+   "status": "dead",
+   "ms": 10004,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:53:27.357Z"
+  },
+  "co.firecms/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2070,
+   "at": "2026-10-13T06:53:27.495Z"
+  },
+  "com.atlassian/atlassian-mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 533,
+   "at": "2026-10-13T06:53:27.890Z"
+  },
+  "ai.smithery/ref-tools-ref-tools-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1187,
+   "at": "2026-10-13T06:53:28.238Z"
+  },
+  "ai.smithery/ChiR24-unreal_mcp": {
+   "status": "error",
+   "http": 404,
+   "ms": 2418,
+   "at": "2026-10-13T06:53:29.913Z"
+  },
+  "ai.smithery/ChiR24-unreal_mcp_server": {
+   "status": "error",
+   "http": 404,
+   "ms": 2227,
+   "at": "2026-10-13T06:53:30.117Z"
+  },
+  "com.neon/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 796,
+   "at": "2026-10-13T06:53:30.913Z"
+  },
+  "com.decionis/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1193,
+   "at": "2026-10-13T06:53:31.106Z"
+  },
+  "ai.smithery/brave": {
+   "status": "dead",
+   "ms": 10005,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:53:31.305Z"
+  },
+  "ai.smithery/hustcc-mcp-mermaid": {
+   "status": "error",
+   "http": 404,
+   "ms": 605,
+   "at": "2026-10-13T06:53:31.518Z"
+  },
+  "com.docfork/docfork-mcp": {
+   "status": "dead",
+   "ms": 255,
+   "error": "ENOTFOUND",
+   "at": "2026-10-13T06:53:31.560Z"
+  },
+  "ai.smithery/docfork-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 878,
+   "at": "2026-10-13T06:53:31.984Z"
+  },
+  "com.zapier/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1177,
+   "at": "2026-10-13T06:53:32.695Z"
+  },
+  "com.monday/monday.com": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1300,
+   "at": "2026-10-13T06:53:32.860Z"
+  },
+  "dev.classifier/docs": {
+   "status": "ok",
+   "http": 200,
+   "ms": 1469,
+   "at": "2026-10-13T06:53:34.165Z"
+  },
+  "app.fojin/fojin-mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2215,
+   "at": "2026-10-13T06:53:36.380Z"
+  },
+  "dev.uiarc/arc": {
+   "status": "auth",
+   "http": 401,
+   "ms": 8532,
+   "at": "2026-10-13T06:53:36.770Z"
+  },
+  "io.equation/equation": {
+   "status": "ok",
+   "http": 200,
+   "ms": 4213,
+   "at": "2026-10-13T06:53:37.073Z"
+  },
+  "dev.classifier/classifier": {
+   "status": "ok",
+   "http": 200,
+   "ms": 6497,
+   "at": "2026-10-13T06:53:38.481Z"
+  },
+  "dev.emisar/emisar": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2992,
+   "at": "2026-10-13T06:53:39.372Z"
+  },
+  "ai.cotal/cotal": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2960,
+   "at": "2026-10-13T06:53:40.033Z"
+  },
+  "dev.svelte/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 3628,
+   "at": "2026-10-13T06:53:40.398Z"
+  },
+  "ai.packmind/mcp-server": {
+   "status": "error",
+   "http": 405,
+   "ms": 2302,
+   "at": "2026-10-13T06:53:40.783Z"
+  },
+  "com.postman/postman-mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3318,
+   "at": "2026-10-13T06:53:42.690Z"
+  },
+  "ai.tetrees.ex/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2679,
+   "at": "2026-10-13T06:53:42.713Z"
+  },
+  "com.getadloop/adloop": {
+   "status": "auth",
+   "http": 401,
+   "ms": 4340,
+   "at": "2026-10-13T06:53:45.123Z"
+  },
+  "io.beancount/beancount": {
+   "status": "auth",
+   "http": 401,
+   "ms": 6479,
+   "at": "2026-10-13T06:53:46.877Z"
+  },
+  "io.github.Atomic-Mail/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2839,
+   "at": "2026-10-13T06:53:47.962Z"
+  },
+  "com.squirrelscan/squirrelscan": {
+   "status": "ok",
+   "http": 200,
+   "ms": 7146,
+   "at": "2026-10-13T06:53:49.859Z"
+  },
+  "ai.smithery/zwldarren-akshare-one-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2457,
+   "at": "2026-10-13T06:53:50.419Z"
+  },
+  "ai.orchis/nimrod": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3640,
+   "at": "2026-10-13T06:53:50.517Z"
+  },
+  "app.glif/glif": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1118,
+   "at": "2026-10-13T06:53:50.977Z"
+  },
+  "dev.e2a/mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1456,
+   "at": "2026-10-13T06:53:52.433Z"
+  },
+  "com.submitmap/directory": {
+   "status": "dead",
+   "ms": 10009,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:53:52.699Z"
+  },
+  "com.mux/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1217,
+   "at": "2026-10-13T06:53:53.916Z"
+  },
+  "com.xquik/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3524,
+   "at": "2026-10-13T06:53:53.943Z"
+  },
+  "com.zomato/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1786,
+   "at": "2026-10-13T06:53:54.220Z"
+  },
+  "ai.smithery/jjlabsio-korea-stock-mcp": {
+   "status": "error",
+   "http": 404,
+   "ms": 877,
+   "at": "2026-10-13T06:53:55.097Z"
+  },
+  "com.svgrid/svgrid": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2499,
+   "at": "2026-10-13T06:53:56.415Z"
+  },
+  "io.betterlytics/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2980,
+   "at": "2026-10-13T06:53:56.923Z"
+  },
+  "com.syncso/syncso": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2819,
+   "at": "2026-10-13T06:53:57.916Z"
+  },
+  "com.payram/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2401,
+   "at": "2026-10-13T06:53:59.324Z"
+  },
+  "app.desktopcommander/remote-desktop-commander": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1607,
+   "at": "2026-10-13T06:53:59.523Z"
+  },
+  "garden.stanislav.svelte-llm/svelte-llm-mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 3499,
+   "at": "2026-10-13T06:53:59.914Z"
+  },
+  "dev.bitbybit/cad": {
+   "status": "dead",
+   "ms": 10015,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:00.532Z"
+  },
+  "com.webflow/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2509,
+   "at": "2026-10-13T06:54:02.032Z"
+  },
+  "com.skillmd/skillmd": {
+   "status": "ok",
+   "http": 200,
+   "ms": 3746,
+   "at": "2026-10-13T06:54:03.070Z"
+  },
+  "dev.augments/mcp": {
+   "status": "dead",
+   "ms": 1383,
+   "error": "CERT_HAS_EXPIRED",
+   "at": "2026-10-13T06:54:03.415Z"
+  },
+  "ai.smithery/pinkpixel-dev-web-scout-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3488,
+   "at": "2026-10-13T06:54:04.020Z"
+  },
+  "com.tapetide/stock-research-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 4709,
+   "at": "2026-10-13T06:54:04.623Z"
+  },
+  "ai.smithery/ScrapeGraphAI-scrapegraph-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 634,
+   "at": "2026-10-13T06:54:05.257Z"
+  },
+  "io.github.AgentPhone-AI/agentphone": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3209,
+   "at": "2026-10-13T06:54:06.279Z"
+  },
+  "app.crawlie/crawlie": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2218,
+   "at": "2026-10-13T06:54:08.497Z"
+  },
+  "ai.smithery/oxylabs-oxylabs-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 643,
+   "at": "2026-10-13T06:54:09.140Z"
+  },
+  "ac.tandem/docs-mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 6154,
+   "at": "2026-10-13T06:54:09.569Z"
+  },
+  "ai.smithery/infranodus-mcp-server-infranodus": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1070,
+   "at": "2026-10-13T06:54:10.210Z"
+  },
+  "com.githits/githits": {
+   "status": "auth",
+   "http": 401,
+   "ms": 5134,
+   "at": "2026-10-13T06:54:10.391Z"
+  },
+  "com.adspirer/ads": {
+   "status": "auth",
+   "http": 401,
+   "ms": 677,
+   "at": "2026-10-13T06:54:10.887Z"
+  },
+  "io.github.Bevel-Software/hexis": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3727,
+   "at": "2026-10-13T06:54:13.296Z"
+  },
+  "com.apple-rag/mcp-server": {
+   "status": "dead",
+   "ms": 10012,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:14.032Z"
+  },
+  "com.xposedornot/xposedornot": {
+   "status": "auth",
+   "http": 403,
+   "ms": 4295,
+   "at": "2026-10-13T06:54:14.686Z"
+  },
+  "ai.runx/runx": {
+   "status": "ok",
+   "http": 200,
+   "ms": 6899,
+   "at": "2026-10-13T06:54:17.787Z"
+  },
+  "com.flashcards-open-source-app/flashcards": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3126,
+   "at": "2026-10-13T06:54:17.812Z"
+  },
+  "ai.smithery/IlyaGusev-academia_mcp": {
+   "status": "error",
+   "http": 404,
+   "ms": 4398,
+   "at": "2026-10-13T06:54:18.430Z"
+  },
+  "com.nibomo/flashcards": {
+   "status": "auth",
+   "http": 401,
+   "ms": 4832,
+   "at": "2026-10-13T06:54:22.619Z"
+  },
+  "com.coachwatts/coach-watts": {
+   "status": "dead",
+   "ms": 10009,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:23.305Z"
+  },
+  "com.keboola/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1970,
+   "at": "2026-10-13T06:54:24.589Z"
+  },
+  "ai.smithery/yuna0x0-anilist-mcp": {
+   "status": "error",
+   "http": 404,
+   "ms": 6954,
+   "at": "2026-10-13T06:54:24.766Z"
+  },
+  "ai.joxo/joxo": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1548,
+   "at": "2026-10-13T06:54:24.853Z"
+  },
+  "com.twelvedata/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1493,
+   "at": "2026-10-13T06:54:26.082Z"
+  },
+  "computer.tin/tin": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2545,
+   "at": "2026-10-13T06:54:27.311Z"
+  },
+  "com.gtm-api/linkedin-mcp": {
+   "status": "dead",
+   "ms": 10007,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:28.437Z"
+  },
+  "com.sonatype/dependency-management-mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1787,
+   "at": "2026-10-13T06:54:29.098Z"
+  },
+  "ai.maximem/synap": {
+   "status": "ok",
+   "http": 200,
+   "ms": 5189,
+   "at": "2026-10-13T06:54:30.042Z"
+  },
+  "ai.smithery/kesslerio-attio-mcp-server": {
+   "status": "error",
+   "http": 404,
+   "ms": 1616,
+   "at": "2026-10-13T06:54:30.714Z"
+  },
+  "ai.smithery/kesslerio-attio-mcp-server-beta": {
+   "status": "error",
+   "http": 404,
+   "ms": 1072,
+   "at": "2026-10-13T06:54:31.114Z"
+  },
+  "ch.opencaselaw/swiss-caselaw": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2961,
+   "at": "2026-10-13T06:54:31.398Z"
+  },
+  "com.flightclaw/flightclaw": {
+   "status": "auth",
+   "http": 401,
+   "ms": 6806,
+   "at": "2026-10-13T06:54:32.888Z"
+  },
+  "io.github.AceDataCloud/mcp-suno": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1495,
+   "at": "2026-10-13T06:54:32.893Z"
+  },
+  "com.local-mcp/local-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3239,
+   "at": "2026-10-13T06:54:34.353Z"
+  },
+  "ai.waystation/airtable": {
+   "status": "error",
+   "http": 402,
+   "ms": 1524,
+   "at": "2026-10-13T06:54:34.412Z"
+  },
+  "ai.waystation/gmail": {
+   "status": "error",
+   "http": 402,
+   "ms": 1555,
+   "at": "2026-10-13T06:54:34.448Z"
+  },
+  "ai.waystation/miro": {
+   "status": "error",
+   "http": 402,
+   "ms": 111,
+   "at": "2026-10-13T06:54:34.559Z"
+  },
+  "ai.waystation/monday": {
+   "status": "error",
+   "http": 402,
+   "ms": 531,
+   "at": "2026-10-13T06:54:35.090Z"
+  },
+  "ai.waystation/office": {
+   "status": "error",
+   "http": 402,
+   "ms": 460,
+   "at": "2026-10-13T06:54:35.550Z"
+  },
+  "ai.waystation/postgres": {
+   "status": "error",
+   "http": 402,
+   "ms": 210,
+   "at": "2026-10-13T06:54:35.760Z"
+  },
+  "ai.waystation/slack": {
+   "status": "error",
+   "http": 402,
+   "ms": 108,
+   "at": "2026-10-13T06:54:35.868Z"
+  },
+  "ai.waystation/supabase": {
+   "status": "error",
+   "http": 402,
+   "ms": 91,
+   "at": "2026-10-13T06:54:35.959Z"
+  },
+  "ai.waystation/teams": {
+   "status": "error",
+   "http": 402,
+   "ms": 131,
+   "at": "2026-10-13T06:54:36.090Z"
+  },
+  "ai.waystation/wrike": {
+   "status": "error",
+   "http": 402,
+   "ms": 82,
+   "at": "2026-10-13T06:54:36.172Z"
+  },
+  "ai.waystation/jira": {
+   "status": "error",
+   "http": 402,
+   "ms": 1977,
+   "at": "2026-10-13T06:54:36.330Z"
+  },
+  "ai.smithery/yuna0x0-hackmd-mcp": {
+   "status": "error",
+   "http": 404,
+   "ms": 6136,
+   "at": "2026-10-13T06:54:36.850Z"
+  },
+  "com.dbtrail/dbtrail": {
+   "status": "dead",
+   "ms": 2650,
+   "error": "ENOTFOUND",
+   "at": "2026-10-13T06:54:39.500Z"
+  },
+  "ai.waystation/mcp": {
+   "status": "dead",
+   "ms": 10013,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:44.425Z"
+  },
+  "io.911fund.skills/directory": {
+   "status": "dead",
+   "ms": 10009,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:46.181Z"
+  },
+  "dev.wraps/docs": {
+   "status": "dead",
+   "ms": 10004,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:46.334Z"
+  },
+  "finance.norman/mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2918,
+   "at": "2026-10-13T06:54:47.343Z"
+  },
+  "co.servicegraph.mcp/servicegraph": {
+   "status": "dead",
+   "ms": 10040,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:49.550Z"
+  },
+  "com.mobbin/mobbin": {
+   "status": "auth",
+   "http": 401,
+   "ms": 4166,
+   "at": "2026-10-13T06:54:53.716Z"
+  },
+  "dev.promplate/hmr": {
+   "status": "dead",
+   "ms": 10016,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:56.197Z"
+  },
+  "app.tradeit/mcp": {
+   "status": "dead",
+   "ms": 10003,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:56.337Z"
+  },
+  "com.kdandoc.mcp/kdan-pdf-mcp": {
+   "status": "dead",
+   "ms": 10005,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:54:57.348Z"
+  },
+  "com.markifact/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1030,
+   "at": "2026-10-13T06:54:57.367Z"
+  },
+  "ai.smithery/kkjdaniel-bgg-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 6132,
+   "at": "2026-10-13T06:54:59.848Z"
+  },
+  "ai.smithery/xinkuang-china-stock-mcp": {
+   "status": "error",
+   "http": 404,
+   "ms": 2991,
+   "at": "2026-10-13T06:55:02.839Z"
+  },
+  "ai.smithery/blockscout-mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 7040,
+   "at": "2026-10-13T06:55:04.407Z"
+  },
+  "com.dexpaprika/dexpaprika": {
+   "status": "error",
+   "http": 200,
+   "ms": 10017,
+   "at": "2026-10-13T06:55:06.214Z"
+  },
+  "com.blockscout/mcp-server": {
+   "status": "dead",
+   "ms": 10007,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:07.355Z"
+  },
+  "io.cypress.mcp/cypress-cloud": {
+   "status": "auth",
+   "http": 401,
+   "ms": 4521,
+   "at": "2026-10-13T06:55:07.360Z"
+  },
+  "com.rootly/mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3177,
+   "at": "2026-10-13T06:55:07.584Z"
+  },
+  "dev.uptimepage/uptimepage": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2242,
+   "at": "2026-10-13T06:55:08.456Z"
+  },
+  "ai.trendsmcp/content-strategy": {
+   "status": "ok",
+   "http": 200,
+   "ms": 4850,
+   "at": "2026-10-13T06:55:13.306Z"
+  },
+  "ai.trendsmcp/competitor-tracking": {
+   "status": "ok",
+   "http": 200,
+   "ms": 5822,
+   "at": "2026-10-13T06:55:13.406Z"
+  },
+  "com.workos/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 8080,
+   "at": "2026-10-13T06:55:15.438Z"
+  },
+  "ai.trendsmcp/ecommerce": {
+   "status": "ok",
+   "http": 200,
+   "ms": 966,
+   "at": "2026-10-13T06:55:16.404Z"
+  },
+  "ai.trendsmcp/market-research": {
+   "status": "ok",
+   "http": 200,
+   "ms": 736,
+   "at": "2026-10-13T06:55:17.140Z"
+  },
+  "com.asobeast/asobeast": {
+   "status": "dead",
+   "ms": 10014,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:17.374Z"
+  },
+  "ai.trendsmcp/crypto": {
+   "status": "ok",
+   "http": 200,
+   "ms": 4785,
+   "at": "2026-10-13T06:55:18.191Z"
+  },
+  "ai.trendsmcp/seo": {
+   "status": "ok",
+   "http": 200,
+   "ms": 1264,
+   "at": "2026-10-13T06:55:18.404Z"
+  },
+  "ai.trendsmcp/social-media": {
+   "status": "dead",
+   "ms": 489,
+   "error": "ENOTFOUND",
+   "at": "2026-10-13T06:55:18.680Z"
+  },
+  "ai.trendsmcp/spotify": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2729,
+   "at": "2026-10-13T06:55:21.133Z"
+  },
+  "io.contextstream/mcp": {
+   "status": "dead",
+   "ms": 10004,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:23.310Z"
+  },
+  "ai.trendsmcp/trends": {
+   "status": "ok",
+   "http": 200,
+   "ms": 3291,
+   "at": "2026-10-13T06:55:24.424Z"
+  },
+  "ai.trendsmcp/x-twitter": {
+   "status": "ok",
+   "http": 200,
+   "ms": 711,
+   "at": "2026-10-13T06:55:25.135Z"
+  },
+  "ai.vaaya/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2514,
+   "at": "2026-10-13T06:55:25.824Z"
+  },
+  "ai.smithery/truss44-mcp-crypto-price": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1984,
+   "at": "2026-10-13T06:55:27.119Z"
+  },
+  "com.smartbear/smartbear-mcp": {
+   "status": "dead",
+   "ms": 10012,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:27.386Z"
+  },
+  "com.smartbear/swagger-mcp": {
+   "status": "dead",
+   "ms": 10012,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:28.693Z"
+  },
+  "com.infobip/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2179,
+   "at": "2026-10-13T06:55:29.565Z"
+  },
+  "com.onkernel/kernel-mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2223,
+   "at": "2026-10-13T06:55:31.788Z"
+  },
+  "dev.specpilot/specpilot": {
+   "status": "ok",
+   "http": 200,
+   "ms": 8150,
+   "at": "2026-10-13T06:55:35.269Z"
+  },
+  "ai.smithery/hithereiamaliff-mcp-nextcloud": {
+   "status": "dead",
+   "ms": 10008,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:35.832Z"
+  },
+  "com.carbondesignsystem.mcp/carbon-mcp": {
+   "status": "dead",
+   "ms": 10004,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:38.697Z"
+  },
+  "app.thoughtspot/mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3607,
+   "at": "2026-10-13T06:55:39.439Z"
+  },
+  "com.ausca/agent-services": {
+   "status": "dead",
+   "ms": 10005,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:41.793Z"
+  },
+  "com.artifactshare/artifactshare": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3731,
+   "at": "2026-10-13T06:55:43.170Z"
+  },
+  "io.github.Carbon-Arc/mcp": {
+   "status": "auth",
+   "http": 403,
+   "ms": 2077,
+   "at": "2026-10-13T06:55:43.870Z"
+  },
+  "com.theagenttimes/agent-news": {
+   "status": "dead",
+   "ms": 10014,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:45.283Z"
+  },
+  "ai.smithery/Leghis-smart-thinking": {
+   "status": "error",
+   "http": 404,
+   "ms": 7343,
+   "at": "2026-10-13T06:55:46.042Z"
+  },
+  "ai.ekwo/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 5257,
+   "at": "2026-10-13T06:55:51.299Z"
+  },
+  "com.porkbun/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1094,
+   "at": "2026-10-13T06:55:52.393Z"
+  },
+  "com.contrastcyber/api": {
+   "status": "dead",
+   "ms": 10008,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:53.178Z"
+  },
+  "com.uicapsule/components": {
+   "status": "ok",
+   "http": 200,
+   "ms": 1214,
+   "at": "2026-10-13T06:55:53.607Z"
+  },
+  "com.expense-budget-tracker/expense-budget-tracker": {
+   "status": "dead",
+   "ms": 10016,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:53.886Z"
+  },
+  "dev.sourced/sourced": {
+   "status": "dead",
+   "ms": 10005,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:55:55.288Z"
+  },
+  "ai.smithery/kirbah-mcp-youtube": {
+   "status": "error",
+   "http": 404,
+   "ms": 3037,
+   "at": "2026-10-13T06:55:56.215Z"
+  },
+  "ai.smithery/LinkupPlatform-linkup-mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3525,
+   "at": "2026-10-13T06:55:57.132Z"
+  },
+  "com.kernelcad/kernelcad": {
+   "status": "ok",
+   "http": 200,
+   "ms": 3568,
+   "at": "2026-10-13T06:55:57.454Z"
+  },
+  "ai.robosystems/robosystems": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2800,
+   "at": "2026-10-13T06:55:59.015Z"
+  },
+  "de.qrcodly/mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2511,
+   "at": "2026-10-13T06:55:59.965Z"
+  },
+  "com.jotform/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3220,
+   "at": "2026-10-13T06:56:00.352Z"
+  },
+  "fr.librejustice/librejustice": {
+   "status": "auth",
+   "http": 401,
+   "ms": 5892,
+   "at": "2026-10-13T06:56:01.180Z"
+  },
+  "com.teamwork/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2096,
+   "at": "2026-10-13T06:56:02.448Z"
+  },
+  "com.getyoutubetranscript/youtube-transcript-and-youtube-search": {
+   "status": "ok",
+   "http": 200,
+   "ms": 4584,
+   "at": "2026-10-13T06:56:03.599Z"
+  },
+  "ai.byteask/embedded-docs": {
+   "status": "ok",
+   "http": 200,
+   "ms": 1776,
+   "at": "2026-10-13T06:56:04.224Z"
+  },
+  "host.justcall.mcp/justcall-mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1916,
+   "at": "2026-10-13T06:56:05.515Z"
+  },
+  "ai.sleepwalker/sleepwalker": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2812,
+   "at": "2026-10-13T06:56:07.036Z"
+  },
+  "ai.smithery/mfukushim-map-traveler-mcp": {
+   "status": "error",
+   "http": 404,
+   "ms": 1595,
+   "at": "2026-10-13T06:56:07.110Z"
+  },
+  "com.stackoverflow.mcp/mcp": {
+   "status": "dead",
+   "ms": 10015,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:56:09.980Z"
+  },
+  "app.cellarion/wine-registry": {
+   "status": "ok",
+   "http": 200,
+   "ms": 3183,
+   "at": "2026-10-13T06:56:10.294Z"
+  },
+  "com.x402-list/x402-list-mcp": {
+   "status": "dead",
+   "ms": 10011,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:56:11.191Z"
+  },
+  "com.run402/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 1510,
+   "at": "2026-10-13T06:56:11.490Z"
+  },
+  "ai.smithery/hollaugo-financial-research-mcp-server": {
+   "status": "error",
+   "http": 404,
+   "ms": 1840,
+   "at": "2026-10-13T06:56:13.330Z"
+  },
+  "com.uptimerobot/uptimerobot": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3077,
+   "at": "2026-10-13T06:56:13.371Z"
+  },
+  "ai.parallel/search-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2292,
+   "at": "2026-10-13T06:56:13.483Z"
+  },
+  "com.callmemcp/call-me": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2292,
+   "at": "2026-10-13T06:56:15.623Z"
+  },
+  "ai.explorium/mcp-explorium": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2492,
+   "at": "2026-10-13T06:56:15.975Z"
+  },
+  "app.cellarion/cellarion": {
+   "status": "auth",
+   "http": 401,
+   "ms": 9646,
+   "at": "2026-10-13T06:56:16.682Z"
+  },
+  "co.churnkey/churnkey": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3334,
+   "at": "2026-10-13T06:56:16.705Z"
+  },
+  "dev.currents/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2799,
+   "at": "2026-10-13T06:56:18.422Z"
+  },
+  "com.kapruka/kapruka-mcp": {
+   "status": "auth",
+   "http": 403,
+   "ms": 2396,
+   "at": "2026-10-13T06:56:19.078Z"
+  },
+  "app.himalayas/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 4621,
+   "at": "2026-10-13T06:56:20.596Z"
+  },
+  "ai.smithery/smithery-ai-cookbook-python-quickstart": {
+   "status": "error",
+   "http": 404,
+   "ms": 1571,
+   "at": "2026-10-13T06:56:20.649Z"
+  },
+  "com.devcycle/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 4941,
+   "at": "2026-10-13T06:56:21.646Z"
+  },
+  "ai.smithery/smithery-ai-cookbook-ts-smithery-cli": {
+   "status": "error",
+   "http": 404,
+   "ms": 1923,
+   "at": "2026-10-13T06:56:22.519Z"
+  },
+  "com.appfigures/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2607,
+   "at": "2026-10-13T06:56:23.256Z"
+  },
+  "com.apideck/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 1153,
+   "at": "2026-10-13T06:56:23.672Z"
+  },
+  "ink.cairn/memory": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3640,
+   "at": "2026-10-13T06:56:25.286Z"
+  },
+  "io.github.AceDataCloud/mcp-seedance": {
+   "status": "auth",
+   "http": 401,
+   "ms": 416,
+   "at": "2026-10-13T06:56:25.702Z"
+  },
+  "com.hasdata/hasdata": {
+   "status": "ok",
+   "http": 200,
+   "ms": 3115,
+   "at": "2026-10-13T06:56:26.371Z"
+  },
+  "io.github.BalajSaleem/criterion": {
+   "status": "error",
+   "http": 429,
+   "ms": 738,
+   "at": "2026-10-13T06:56:26.440Z"
+  },
+  "dev.clipkit/clipkit": {
+   "status": "ok",
+   "http": 200,
+   "ms": 1644,
+   "at": "2026-10-13T06:56:28.084Z"
+  },
+  "com.royashbrook/hush": {
+   "status": "ok",
+   "http": 200,
+   "ms": 4577,
+   "at": "2026-10-13T06:56:28.249Z"
+  },
+  "dev.stitchapi/docs": {
+   "status": "ok",
+   "http": 200,
+   "ms": 1993,
+   "at": "2026-10-13T06:56:28.364Z"
+  },
+  "ai.smithery/neverinfamous-memory-journal-mcp": {
+   "status": "dead",
+   "ms": 10011,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:56:28.433Z"
+  },
+  "com.idealo.mcp/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1410,
+   "at": "2026-10-13T06:56:29.660Z"
+  },
+  "com.usebondery/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1315,
+   "at": "2026-10-13T06:56:30.975Z"
+  },
+  "ai.smithery/Nekzus-npm-sentinel-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2779,
+   "at": "2026-10-13T06:56:31.143Z"
+  },
+  "io.github.CleanSlice/mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 2723,
+   "at": "2026-10-13T06:56:31.156Z"
+  },
+  "com.hasdata/google-search": {
+   "status": "ok",
+   "http": 200,
+   "ms": 888,
+   "at": "2026-10-13T06:56:32.031Z"
+  },
+  "ai.veecle/chiplab": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1603,
+   "at": "2026-10-13T06:56:32.578Z"
+  },
+  "com.hasdata/instagram": {
+   "status": "ok",
+   "http": 200,
+   "ms": 723,
+   "at": "2026-10-13T06:56:32.754Z"
+  },
+  "com.getmunin/munin": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2905,
+   "at": "2026-10-13T06:56:34.061Z"
+  },
+  "ai.parallel/task-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1608,
+   "at": "2026-10-13T06:56:34.362Z"
+  },
+  "com.alchemy/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1194,
+   "at": "2026-10-13T06:56:35.255Z"
+  },
+  "com.amplitude/mcp-server": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1837,
+   "at": "2026-10-13T06:56:36.199Z"
+  },
+  "com.bitly/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1776,
+   "at": "2026-10-13T06:56:37.031Z"
+  },
+  "com.airtable/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1330,
+   "at": "2026-10-13T06:56:37.529Z"
+  },
+  "io.github.BuyWhere/buywhere-mcp": {
+   "status": "ok",
+   "http": 200,
+   "ms": 4982,
+   "at": "2026-10-13T06:56:37.560Z"
+  },
+  "com.gitlab/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 718,
+   "at": "2026-10-13T06:56:37.749Z"
+  },
+  "com.notion/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 532,
+   "at": "2026-10-13T06:56:38.092Z"
+  },
+  "dev.e18e/e18e": {
+   "status": "dead",
+   "ms": 10008,
+   "error": "TimeoutError",
+   "at": "2026-10-13T06:56:38.093Z"
+  },
+  "com.vercel/vercel-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 906,
+   "at": "2026-10-13T06:56:38.998Z"
+  },
+  "com.supermetrics/supermetrics": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1306,
+   "at": "2026-10-13T06:56:39.055Z"
+  },
+  "ai.fireflies/fireflies": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2399,
+   "at": "2026-10-13T06:56:41.397Z"
+  },
+  "com.invompt/invompt": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3876,
+   "at": "2026-10-13T06:56:41.405Z"
+  },
+  "com.wix/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 4676,
+   "at": "2026-10-13T06:56:42.769Z"
+  },
+  "com.ifttt/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3309,
+   "at": "2026-10-13T06:56:44.714Z"
+  },
+  "com.gocardless/gc-mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 5672,
+   "at": "2026-10-13T06:56:44.727Z"
+  },
+  "com.icons8/icons8": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3878,
+   "at": "2026-10-13T06:56:45.275Z"
+  },
+  "app.linear/linear": {
+   "status": "auth",
+   "http": 401,
+   "ms": 856,
+   "at": "2026-10-13T06:56:45.571Z"
+  },
+  "com.ibkr/interactive-brokers-ibkr": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2918,
+   "at": "2026-10-13T06:56:45.687Z"
+  },
+  "app.lucid.mcp/lucid": {
+   "status": "auth",
+   "http": 401,
+   "ms": 1785,
+   "at": "2026-10-13T06:56:46.512Z"
+  },
+  "com.whimsical/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 2084,
+   "at": "2026-10-13T06:56:47.655Z"
+  },
+  "com.railway/mcp": {
+   "status": "auth",
+   "http": 401,
+   "ms": 3116,
+   "at": "2026-10-13T06:56:48.391Z"
+  }
+ }
+}

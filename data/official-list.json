@@ -1,0 +1,2074 @@
+[
+ {
+  "category": "Cloud and DevOps",
+  "label": "google/mcp",
+  "url": "https://github.com/google/mcp",
+  "repo": "google/mcp",
+  "description": "Google's collection of official MCP servers for Google and Google Cloud services"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "cloudflare/mcp-server-cloudflare",
+  "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+  "repo": "cloudflare/mcp-server-cloudflare",
+  "description": "Manage Workers, KV, R2, D1 and other Cloudflare services"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "TencentCloudBase/CloudBase-AI-Toolkit",
+  "url": "https://github.com/TencentCloudBase/CloudBase-AI-Toolkit",
+  "repo": "TencentCloudBase/CloudBase-AI-Toolkit",
+  "description": "Build and deploy full-stack apps on Tencent CloudBase"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "vercel/next-devtools-mcp",
+  "url": "https://github.com/vercel/next-devtools-mcp",
+  "repo": "vercel/next-devtools-mcp",
+  "description": "Next.js development tools, docs and runtime diagnostics for coding agents"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "GoogleCloudPlatform/cloud-run-mcp",
+  "url": "https://github.com/GoogleCloudPlatform/cloud-run-mcp",
+  "repo": "GoogleCloudPlatform/cloud-run-mcp",
+  "description": "Deploy apps to Google Cloud Run from your AI assistant"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "TencentEdgeOne/edgeone-makers-mcp",
+  "url": "https://github.com/TencentEdgeOne/edgeone-makers-mcp",
+  "repo": "TencentEdgeOne/edgeone-makers-mcp",
+  "description": "Deploy HTML and sites to Tencent EdgeOne Pages"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "aliyun/alibabacloud-devops-mcp-server",
+  "url": "https://github.com/aliyun/alibabacloud-devops-mcp-server",
+  "repo": "aliyun/alibabacloud-devops-mcp-server",
+  "description": "Alibaba Cloud DevOps (Yunxiao) projects, code and pipelines"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "hostinger/api-mcp-server",
+  "url": "https://github.com/hostinger/api-mcp-server",
+  "repo": "hostinger/api-mcp-server",
+  "description": "Manage Hostinger hosting, domains and VPS through the API"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "harness/mcp-server",
+  "url": "https://github.com/harness/mcp-server",
+  "repo": "harness/mcp-server",
+  "description": "Work with Harness pipelines, services and environments"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "CircleCI-Public/mcp-server-circleci",
+  "url": "https://github.com/CircleCI-Public/mcp-server-circleci",
+  "repo": "CircleCI-Public/mcp-server-circleci",
+  "description": "Debug failed builds and manage CircleCI pipelines"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "netlify/netlify-mcp",
+  "url": "https://github.com/netlify/netlify-mcp",
+  "repo": "netlify/netlify-mcp",
+  "description": "Create, build and deploy sites on Netlify"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "buildkite/buildkite-mcp-server",
+  "url": "https://github.com/buildkite/buildkite-mcp-server",
+  "repo": "buildkite/buildkite-mcp-server",
+  "description": "Inspect Buildkite pipelines, builds and logs"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Tencent/cos-mcp",
+  "url": "https://github.com/Tencent/cos-mcp",
+  "repo": "Tencent/cos-mcp",
+  "description": "Tencent Cloud COS object storage and data processing"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Aiven-Open/mcp-aiven",
+  "url": "https://github.com/Aiven-Open/mcp-aiven",
+  "repo": "Aiven-Open/mcp-aiven",
+  "description": "Navigate Aiven projects and manage PostgreSQL, Kafka, ClickHouse and OpenSearch"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Vercel",
+  "url": "https://vercel.com/docs/mcp/vercel-mcp",
+  "repo": null,
+  "description": "Manage Vercel projects and deployments"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Supabase",
+  "url": "https://github.com/supabase/mcp",
+  "repo": "supabase/mcp",
+  "description": "Manage Supabase projects, databases and edge functions"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Firebase",
+  "url": "https://firebase.google.com/docs/ai-assistance/mcp-server",
+  "repo": null,
+  "description": "Firebase tools and docs for AI assistants"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Azure",
+  "url": "https://github.com/microsoft/mcp",
+  "repo": "microsoft/mcp",
+  "description": "Microsoft's MCP servers including Azure MCP Server"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Terraform",
+  "url": "https://github.com/hashicorp/terraform-mcp-server",
+  "repo": "hashicorp/terraform-mcp-server",
+  "description": "Terraform registry and workspace tools"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Docker MCP Toolkit",
+  "url": "https://github.com/docker/mcp-gateway",
+  "repo": "docker/mcp-gateway",
+  "description": "Docker's MCP gateway for running MCP servers in containers"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Railway",
+  "url": "https://docs.railway.com/ai/mcp-server",
+  "repo": null,
+  "description": "Deploy and manage Railway projects"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Octopus Deploy",
+  "url": "https://github.com/OctopusDeploy/mcp-server",
+  "repo": "OctopusDeploy/mcp-server",
+  "description": "Octopus Deploy releases and deployments"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "GitLab",
+  "url": "https://docs.gitlab.com/user/model_context_protocol/mcp_server/",
+  "repo": null,
+  "description": "GitLab projects, issues and merge requests"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "AWS CloudTrail",
+  "url": "https://github.com/awslabs/mcp/tree/main/src/cloudtrail-mcp-server",
+  "repo": "awslabs/mcp",
+  "description": "Query CloudTrail events and Lake for audits"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Google Compute Engine",
+  "url": "https://docs.cloud.google.com/compute/docs/use-compute-engine-mcp",
+  "repo": null,
+  "description": "Manage VMs, disks and snapshots on Compute Engine"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Cloudflare Code Mode",
+  "url": "https://github.com/cloudflare/mcp",
+  "repo": "cloudflare/mcp",
+  "description": "Entire Cloudflare API through search and execute tools"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Docker Hub",
+  "url": "https://github.com/docker/hub-mcp",
+  "repo": "docker/hub-mcp",
+  "description": "Search Docker Hub repositories and images"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Alibaba Cloud Ops",
+  "url": "https://github.com/aliyun/alibaba-cloud-ops-mcp-server",
+  "repo": "aliyun/alibaba-cloud-ops-mcp-server",
+  "description": "Operate Alibaba Cloud resources like ECS and monitoring"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Azure DevOps",
+  "url": "https://github.com/microsoft/azure-devops-mcp",
+  "repo": "microsoft/azure-devops-mcp",
+  "description": "Azure DevOps repos, work items and pipelines"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Radar",
+  "url": "https://github.com/skyhook-io/radar",
+  "repo": "skyhook-io/radar",
+  "description": "Inspect, troubleshoot and operate Kubernetes clusters"
+ },
+ {
+  "category": "Cloud and DevOps",
+  "label": "Easypanel",
+  "url": "https://easypanel.io/docs/mcp",
+  "repo": null,
+  "description": "Manage self-hosted applications and databases via Easypanel’s built-in MCP"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "googleapis/mcp-toolbox",
+  "url": "https://github.com/googleapis/mcp-toolbox",
+  "repo": "googleapis/mcp-toolbox",
+  "description": "MCP Toolbox for Databases by Google, connecting agents to SQL and NoSQL stores"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "instantdb/instant",
+  "url": "https://github.com/instantdb/instant",
+  "repo": "instantdb/instant",
+  "description": "Realtime backend and database for apps, with an MCP server"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "timescale/pg-aiguide",
+  "url": "https://github.com/timescale/pg-aiguide",
+  "repo": "timescale/pg-aiguide",
+  "description": "Postgres best practices and docs for AI coding tools"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "neo4j-contrib/mcp-neo4j",
+  "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+  "repo": "neo4j-contrib/mcp-neo4j",
+  "description": "Neo4j graph database queries and schema tools"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "ClickHouse/mcp-clickhouse",
+  "url": "https://github.com/ClickHouse/mcp-clickhouse",
+  "repo": "ClickHouse/mcp-clickhouse",
+  "description": "Run analytical queries on ClickHouse"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "neondatabase/mcp-server-neon",
+  "url": "https://github.com/neondatabase/mcp-server-neon",
+  "repo": "neondatabase/mcp-server-neon",
+  "description": "Manage Neon serverless Postgres projects and branches"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "dbt-labs/dbt-mcp",
+  "url": "https://github.com/dbt-labs/dbt-mcp",
+  "repo": "dbt-labs/dbt-mcp",
+  "description": "Expose dbt models, metrics and the semantic layer to agents"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "chroma-core/chroma-mcp",
+  "url": "https://github.com/chroma-core/chroma-mcp",
+  "repo": "chroma-core/chroma-mcp",
+  "description": "Vector search and collections on Chroma"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "motherduckdb/mcp-server-motherduck",
+  "url": "https://github.com/motherduckdb/mcp-server-motherduck",
+  "repo": "motherduckdb/mcp-server-motherduck",
+  "description": "Query DuckDB and MotherDuck"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "apache/doris-mcp-server",
+  "url": "https://github.com/apache/doris-mcp-server",
+  "repo": "apache/doris-mcp-server",
+  "description": "Query and manage Apache Doris"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "zilliztech/mcp-server-milvus",
+  "url": "https://github.com/zilliztech/mcp-server-milvus",
+  "repo": "zilliztech/mcp-server-milvus",
+  "description": "Vector search on Milvus"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "meilisearch/meilisearch-mcp",
+  "url": "https://github.com/meilisearch/meilisearch-mcp",
+  "repo": "meilisearch/meilisearch-mcp",
+  "description": "Manage Meilisearch indexes and run searches"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "StarRocks/mcp-server-starrocks",
+  "url": "https://github.com/StarRocks/mcp-server-starrocks",
+  "repo": "StarRocks/mcp-server-starrocks",
+  "description": "Query StarRocks analytics databases"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "tinybirdco/mcp-tinybird",
+  "url": "https://github.com/tinybirdco/mcp-tinybird",
+  "repo": "tinybirdco/mcp-tinybird",
+  "description": "Query Tinybird data sources and endpoints"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Teradata/teradata-mcp-server",
+  "url": "https://github.com/Teradata/teradata-mcp-server",
+  "repo": "Teradata/teradata-mcp-server",
+  "description": "Teradata data and analytics tools"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Unstructured-IO/UNS-MCP",
+  "url": "https://github.com/Unstructured-IO/UNS-MCP",
+  "repo": "Unstructured-IO/UNS-MCP",
+  "description": "Process and ingest unstructured documents with Unstructured"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "couchbase/mcp-server-couchbase",
+  "url": "https://github.com/couchbase/mcp-server-couchbase",
+  "repo": "couchbase/mcp-server-couchbase",
+  "description": "Query and manage Couchbase clusters"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "singlestore-labs/mcp-server-singlestore",
+  "url": "https://github.com/singlestore-labs/mcp-server-singlestore",
+  "repo": "singlestore-labs/mcp-server-singlestore",
+  "description": "Interact with SingleStore databases and workspaces"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "GreptimeTeam/greptimedb-mcp-server",
+  "url": "https://github.com/GreptimeTeam/greptimedb-mcp-server",
+  "repo": "GreptimeTeam/greptimedb-mcp-server",
+  "description": "Query GreptimeDB time series data"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "PlanetScale",
+  "url": "https://planetscale.com/docs/connect/mcp",
+  "repo": null,
+  "description": "Query and manage PlanetScale databases"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Xata",
+  "url": "https://github.com/xataio/mcp",
+  "repo": "xataio/mcp",
+  "description": "Xata Postgres databases"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Qdrant",
+  "url": "https://github.com/qdrant/mcp-server-qdrant",
+  "repo": "qdrant/mcp-server-qdrant",
+  "description": "Vector search with Qdrant"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Oracle",
+  "url": "https://github.com/oracle/mcp",
+  "repo": "oracle/mcp",
+  "description": "Oracle's official MCP servers"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Airtable",
+  "url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+  "repo": null,
+  "description": "Official Airtable MCP server for bases and records"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Kaggle",
+  "url": "https://www.kaggle.com/docs/mcp",
+  "repo": null,
+  "description": "Notebooks, competitions, datasets and models on Kaggle"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "AWS DynamoDB",
+  "url": "https://github.com/awslabs/mcp/tree/main/src/dynamodb-mcp-server",
+  "repo": "awslabs/mcp",
+  "description": "DynamoDB data modeling guidance and validation"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Google Cloud BigQuery",
+  "url": "https://github.com/GoogleCloudPlatform/bigquery-remote-mcp",
+  "repo": "GoogleCloudPlatform/bigquery-remote-mcp",
+  "description": "Run BigQuery queries and inspect metadata"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Metabase",
+  "url": "https://www.metabase.com/docs/latest/ai/overview",
+  "repo": null,
+  "description": "Built-in MCP to search, query, visualize Metabase data"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Hex",
+  "url": "https://learn.hex.tech/docs/api-integrations/mcp-server",
+  "repo": null,
+  "description": "Reason over Hex data projects and notebooks"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Elasticsearch",
+  "url": "https://www.elastic.co/docs/explore-analyze/ai-features/agent-builder/mcp-server",
+  "repo": null,
+  "description": "Query Elasticsearch data through the Elastic Agent Builder MCP endpoint"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Apache IoTDB",
+  "url": "https://github.com/apache/iotdb-mcp-server",
+  "repo": "apache/iotdb-mcp-server",
+  "description": "Query and manage Apache IoTDB time series data"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Pinecone Assistant",
+  "url": "https://github.com/pinecone-io/assistant-mcp",
+  "repo": "pinecone-io/assistant-mcp",
+  "description": "Retrieve context from a Pinecone Assistant"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Prisma",
+  "url": "https://github.com/prisma/prisma",
+  "repo": "prisma/prisma",
+  "description": "Manage Prisma databases and migrations from AI assistants"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Convex",
+  "url": "https://github.com/get-convex/convex-backend",
+  "repo": "get-convex/convex-backend",
+  "description": "Inspect and query Convex reactive databases"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "MongoDB",
+  "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "repo": "mongodb-js/mongodb-mcp-server",
+  "description": "Connect to MongoDB databases and Atlas"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Redis",
+  "url": "https://github.com/redis/mcp-redis",
+  "repo": "redis/mcp-redis",
+  "description": "Natural language interface for Redis data"
+ },
+ {
+  "category": "Databases and Data",
+  "label": "Snowflake",
+  "url": "https://github.com/Snowflake-Labs/mcp",
+  "repo": "Snowflake-Labs/mcp",
+  "description": "Snowflake Cortex AI and object management"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "jitsucom/jitsu",
+  "url": "https://github.com/jitsucom/jitsu",
+  "repo": "jitsucom/jitsu",
+  "description": "Open source data ingestion and event collection platform"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "grafana/mcp-grafana",
+  "url": "https://github.com/grafana/mcp-grafana",
+  "repo": "grafana/mcp-grafana",
+  "description": "Search dashboards, query datasources and investigate incidents in Grafana"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "comet-ml/opik-mcp",
+  "url": "https://github.com/comet-ml/opik-mcp",
+  "repo": "comet-ml/opik-mcp",
+  "description": "Comet Opik LLM observability and evaluation"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "initMAX/zabbix-mcp-server",
+  "url": "https://github.com/initMAX/zabbix-mcp-server",
+  "repo": "initMAX/zabbix-mcp-server",
+  "description": "Zabbix monitoring: hosts, triggers and problems"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "langfuse/mcp-server-langfuse",
+  "url": "https://github.com/langfuse/mcp-server-langfuse",
+  "repo": "langfuse/mcp-server-langfuse",
+  "description": "Access Langfuse prompt management"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "pydantic/logfire-mcp",
+  "url": "https://github.com/pydantic/logfire-mcp",
+  "repo": "pydantic/logfire-mcp",
+  "description": "Query traces and metrics from Pydantic Logfire"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "PostHog/mcp",
+  "url": "https://github.com/PostHog/mcp",
+  "repo": "PostHog/mcp",
+  "description": "Product analytics, feature flags and error tracking from PostHog"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "axiomhq/mcp-server-axiom",
+  "url": "https://github.com/axiomhq/mcp-server-axiom",
+  "repo": "axiomhq/mcp-server-axiom",
+  "description": "Query logs and traces in Axiom"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "incident-io/incidentio-mcp-golang",
+  "url": "https://github.com/incident-io/incidentio-mcp-golang",
+  "repo": "incident-io/incidentio-mcp-golang",
+  "description": "Manage incidents in incident.io"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "instana/mcp-instana",
+  "url": "https://github.com/instana/mcp-instana",
+  "repo": "instana/mcp-instana",
+  "description": "IBM Instana application performance monitoring"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "Sentry",
+  "url": "https://github.com/getsentry/sentry-mcp",
+  "repo": "getsentry/sentry-mcp",
+  "description": "Inspect Sentry issues and errors"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "PagerDuty",
+  "url": "https://developer.pagerduty.com/docs/mcp-tooling-remote-server",
+  "repo": null,
+  "description": "Incidents, services and on-call from PagerDuty"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "Amplitude",
+  "url": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp",
+  "repo": null,
+  "description": "Product analytics charts, cohorts, experiments via natural language"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "Mixpanel",
+  "url": "https://docs.mixpanel.com/docs/mcp",
+  "repo": null,
+  "description": "Query events, funnels, retention, and replays in Mixpanel"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "Pendo",
+  "url": "https://support.pendo.io/hc/en-us/articles/41102236924955-Connect-to-the-Pendo-MCP-server",
+  "repo": null,
+  "description": "Product usage, visitor, and account analytics from Pendo"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "Monte Carlo",
+  "url": "https://docs.getmontecarlo.com/docs/monte-carlo-mcp-server-technical-overview",
+  "repo": null,
+  "description": "Data and AI observability, monitors, lineage, alerts"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "Contentsquare",
+  "url": "https://contentsquare.com/platform/capabilities/mcp-server/",
+  "repo": null,
+  "description": "Session replay, rage clicks, funnels from Contentsquare"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "Netdata",
+  "url": "https://github.com/netdata/netdata/blob/master/src/web/mcp/README.md",
+  "repo": "netdata/netdata",
+  "description": "Infrastructure monitoring and root cause analysis with Netdata"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "VictoriaMetrics",
+  "url": "https://github.com/VictoriaMetrics/mcp-victoriametrics",
+  "repo": "VictoriaMetrics/mcp-victoriametrics",
+  "description": "Query VictoriaMetrics instances and read its docs"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "Arize Phoenix",
+  "url": "https://github.com/Arize-ai/phoenix",
+  "repo": "Arize-ai/phoenix",
+  "description": "LLM observability and evaluation with Phoenix"
+ },
+ {
+  "category": "Observability and Analytics",
+  "label": "Google Analytics",
+  "url": "https://github.com/googleanalytics/google-analytics-mcp",
+  "repo": "googleanalytics/google-analytics-mcp",
+  "description": "Query Google Analytics reports and properties"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "trycua/cua",
+  "url": "https://github.com/trycua/cua",
+  "repo": "trycua/cua",
+  "description": "Infrastructure for computer-use agents"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "Skyvern-AI/skyvern",
+  "url": "https://github.com/Skyvern-AI/skyvern",
+  "repo": "Skyvern-AI/skyvern",
+  "description": "Automate browser workflows with LLMs and computer vision"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "browserbase/mcp-server-browserbase",
+  "url": "https://github.com/browserbase/mcp-server-browserbase",
+  "repo": "browserbase/mcp-server-browserbase",
+  "description": "Cloud browser sessions and automation with Browserbase"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "brightdata/brightdata-mcp",
+  "url": "https://github.com/brightdata/brightdata-mcp",
+  "repo": "brightdata/brightdata-mcp",
+  "description": "Web access, scraping and unblocking with Bright Data"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "hyperbrowserai/mcp",
+  "url": "https://github.com/hyperbrowserai/mcp",
+  "repo": "hyperbrowserai/mcp",
+  "description": "Scrape, crawl and automate browsers with Hyperbrowser"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "mozilla/firefox-devtools-mcp",
+  "url": "https://github.com/mozilla/firefox-devtools-mcp",
+  "repo": "mozilla/firefox-devtools-mcp",
+  "description": "Control and debug Firefox through DevTools"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "tinyfish-io/agentql-mcp",
+  "url": "https://github.com/tinyfish-io/agentql-mcp",
+  "repo": "tinyfish-io/agentql-mcp",
+  "description": "Extract structured data from the web with AgentQL"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "scrapeless-ai/scrapeless-mcp-server",
+  "url": "https://github.com/scrapeless-ai/scrapeless-mcp-server",
+  "repo": "scrapeless-ai/scrapeless-mcp-server",
+  "description": "Scraping and browser automation with Scrapeless"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "browserstack/mcp-server",
+  "url": "https://github.com/browserstack/mcp-server",
+  "repo": "browserstack/mcp-server",
+  "description": "Test on real browsers and devices with BrowserStack"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "oxylabs/oxylabs-mcp",
+  "url": "https://github.com/oxylabs/oxylabs-mcp",
+  "repo": "oxylabs/oxylabs-mcp",
+  "description": "Web scraping through Oxylabs"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "screenshotone/mcp",
+  "url": "https://github.com/screenshotone/mcp",
+  "repo": "screenshotone/mcp",
+  "description": "Render website screenshots with ScreenshotOne"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "Decodo/mcp-server",
+  "url": "https://github.com/Decodo/mcp-server",
+  "repo": "Decodo/mcp-server",
+  "description": "Web scraping and proxy tools from Decodo"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "Apify",
+  "url": "https://github.com/apify/apify-mcp-server",
+  "repo": "apify/apify-mcp-server",
+  "description": "Run Apify Actors for scraping and automation"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "Firecrawl",
+  "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+  "repo": "firecrawl/firecrawl-mcp-server",
+  "description": "Scrape and crawl websites with Firecrawl"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "Chrome DevTools",
+  "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "repo": "ChromeDevTools/chrome-devtools-mcp",
+  "description": "Control and inspect Chrome with DevTools"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "Playwright",
+  "url": "https://github.com/microsoft/playwright-mcp",
+  "repo": "microsoft/playwright-mcp",
+  "description": "Browser automation with Playwright"
+ },
+ {
+  "category": "Browser Automation and Web Data",
+  "label": "Scrapfly",
+  "url": "https://github.com/scrapfly/scrapfly-mcp",
+  "repo": "scrapfly/scrapfly-mcp",
+  "description": "Web scraping and data extraction via Scrapfly"
+ },
+ {
+  "category": "Search and Research",
+  "label": "exa-labs/exa-mcp-server",
+  "url": "https://github.com/exa-labs/exa-mcp-server",
+  "repo": "exa-labs/exa-mcp-server",
+  "description": "AI web search and code context with Exa"
+ },
+ {
+  "category": "Search and Research",
+  "label": "ref-tools/ref-tools-mcp",
+  "url": "https://github.com/ref-tools/ref-tools-mcp",
+  "repo": "ref-tools/ref-tools-mcp",
+  "description": "Up to date docs search for coding agents"
+ },
+ {
+  "category": "Search and Research",
+  "label": "kagisearch/kagimcp",
+  "url": "https://github.com/kagisearch/kagimcp",
+  "repo": "kagisearch/kagimcp",
+  "description": "Search the web with Kagi"
+ },
+ {
+  "category": "Search and Research",
+  "label": "serpapi/serpapi-mcp",
+  "url": "https://github.com/serpapi/serpapi-mcp",
+  "repo": "serpapi/serpapi-mcp",
+  "description": "Search engine results through SerpApi"
+ },
+ {
+  "category": "Search and Research",
+  "label": "Tavily",
+  "url": "https://github.com/tavily-ai/tavily-mcp",
+  "repo": "tavily-ai/tavily-mcp",
+  "description": "Web search and extraction with Tavily"
+ },
+ {
+  "category": "Search and Research",
+  "label": "Perplexity",
+  "url": "https://github.com/perplexityai/modelcontextprotocol",
+  "repo": "perplexityai/modelcontextprotocol",
+  "description": "Web search with Perplexity"
+ },
+ {
+  "category": "Search and Research",
+  "label": "Parallel Search",
+  "url": "https://github.com/parallel-web/search-mcp",
+  "repo": "parallel-web/search-mcp",
+  "description": "Web search for AI agents via Parallel"
+ },
+ {
+  "category": "Search and Research",
+  "label": "Brave Search",
+  "url": "https://github.com/brave/brave-search-mcp-server",
+  "repo": "brave/brave-search-mcp-server",
+  "description": "Web, local and image search with Brave"
+ },
+ {
+  "category": "Search and Research",
+  "label": "Jina AI",
+  "url": "https://github.com/jina-ai/MCP",
+  "repo": "jina-ai/MCP",
+  "description": "Search, read and embed the web with Jina AI"
+ },
+ {
+  "category": "Search and Research",
+  "label": "Desearch",
+  "url": "https://github.com/Desearch-ai/mcp-desearch",
+  "repo": "Desearch-ai/mcp-desearch",
+  "description": "AI search, X search and web search for AI agents"
+ },
+ {
+  "category": "Search and Research",
+  "label": "You.com",
+  "url": "https://github.com/youdotcom-oss/mcp",
+  "repo": "youdotcom-oss/mcp",
+  "description": "Web search, page contents and research with You.com"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "21st-dev/magic-mcp",
+  "url": "https://github.com/21st-dev/magic-mcp",
+  "repo": "21st-dev/magic-mcp",
+  "description": "Generate UI components from natural language with 21st.dev Magic"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "lingodotdev/lingo.dev",
+  "url": "https://github.com/lingodotdev/lingo.dev",
+  "repo": "lingodotdev/lingo.dev",
+  "description": "AI localization toolkit and MCP server"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "JetBrains/mcp-jetbrains",
+  "url": "https://github.com/JetBrains/mcp-jetbrains",
+  "repo": "JetBrains/mcp-jetbrains",
+  "description": "Drive JetBrains IDEs from MCP clients"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "gitkraken/gk-cli",
+  "url": "https://github.com/gitkraken/gk-cli",
+  "repo": "gitkraken/gk-cli",
+  "description": "GitKraken CLI with a built-in MCP server for Git and issue tracking"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "e2b-dev/mcp-server",
+  "url": "https://github.com/e2b-dev/mcp-server",
+  "repo": "e2b-dev/mcp-server",
+  "description": "Run code in secure E2B sandboxes"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "sveltejs/ai-tools",
+  "url": "https://github.com/sveltejs/ai-tools",
+  "repo": "sveltejs/ai-tools",
+  "description": "Official Svelte docs and tooling for AI assistants"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "postmanlabs/postman-mcp-server",
+  "url": "https://github.com/postmanlabs/postman-mcp-server",
+  "repo": "postmanlabs/postman-mcp-server",
+  "description": "Work with Postman collections, workspaces and APIs"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "jamsocket/forevervm",
+  "url": "https://github.com/jamsocket/forevervm",
+  "repo": "jamsocket/forevervm",
+  "description": "Run stateful code in persistent ForeverVM sandboxes"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "oschina/mcp-gitee",
+  "url": "https://github.com/oschina/mcp-gitee",
+  "repo": "oschina/mcp-gitee",
+  "description": "Manage Gitee repositories, issues and pull requests"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "GitHub",
+  "url": "https://github.com/github/github-mcp-server",
+  "repo": "github/github-mcp-server",
+  "description": "GitHub's official MCP server for repos, issues and pull requests"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Context7",
+  "url": "https://github.com/upstash/context7",
+  "repo": "upstash/context7",
+  "description": "Up to date library docs for coding agents"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Hugging Face",
+  "url": "https://github.com/huggingface/hf-mcp-server",
+  "repo": "huggingface/hf-mcp-server",
+  "description": "Hugging Face Hub models, datasets and Spaces"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Storybook",
+  "url": "https://storybook.js.org/docs/ai/mcp/overview",
+  "repo": null,
+  "description": "Storybook component docs for AI agents"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Stack Overflow",
+  "url": "https://github.com/StackExchange/Stack-MCP",
+  "repo": "StackExchange/Stack-MCP",
+  "description": "Stack Overflow knowledge for AI assistants"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "MDN",
+  "url": "https://github.com/mdn/mcp",
+  "repo": "mdn/mcp",
+  "description": "MDN Web Docs for AI assistants"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Mintlify",
+  "url": "https://www.mintlify.com/docs/ai/model-context-protocol",
+  "repo": null,
+  "description": "Search docs hosted on Mintlify"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Clerk",
+  "url": "https://clerk.com/docs/guides/ai/mcp/clerk-mcp-server",
+  "repo": null,
+  "description": "Clerk authentication SDK snippets and docs"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Stytch",
+  "url": "https://stytch.com/docs/resources/workspace-management/stytch-mcp-server",
+  "repo": null,
+  "description": "Manage Stytch auth workspaces"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Salesforce DX",
+  "url": "https://github.com/salesforcecli/mcp",
+  "repo": "salesforcecli/mcp",
+  "description": "Salesforce DX tools for orgs and metadata"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "OpenZeppelin",
+  "url": "https://github.com/OpenZeppelin/openzeppelin-mcp",
+  "repo": "OpenZeppelin/openzeppelin-mcp",
+  "description": "MCP servers for OpenZeppelin smart contract products"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Laravel Boost",
+  "url": "https://github.com/laravel/boost",
+  "repo": "laravel/boost",
+  "description": "Laravel app context and tools for AI agents"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "ConfigCat",
+  "url": "https://github.com/configcat/mcp-server",
+  "repo": "configcat/mcp-server",
+  "description": "Manage ConfigCat feature flags and settings"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "DevCycle",
+  "url": "https://github.com/DevCycleHQ/cli",
+  "repo": "DevCycleHQ/cli",
+  "description": "Create and manage DevCycle feature flags"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Alchemy",
+  "url": "https://github.com/alchemyplatform/alchemy-mcp-server",
+  "repo": "alchemyplatform/alchemy-mcp-server",
+  "description": "Blockchain APIs from Alchemy"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "MCP Reference Servers",
+  "url": "https://github.com/modelcontextprotocol/servers",
+  "repo": "modelcontextprotocol/servers",
+  "description": "Official reference servers: filesystem, fetch, git, memory and more"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Microsoft Learn",
+  "url": "https://github.com/MicrosoftDocs/mcp",
+  "repo": "MicrosoftDocs/mcp",
+  "description": "Search official Microsoft Learn documentation"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "Apollo GraphQL",
+  "url": "https://github.com/apollographql/apollo-mcp-server",
+  "repo": "apollographql/apollo-mcp-server",
+  "description": "Expose GraphQL APIs as MCP tools"
+ },
+ {
+  "category": "Developer Tools",
+  "label": "allxsmith/bestax",
+  "url": "https://github.com/allxsmith/bestax/tree/main/bestax-mcp",
+  "repo": "allxsmith/bestax",
+  "description": "Bestax docs for Bulma v1 React components, offline"
+ },
+ {
+  "category": "Security and Code Quality",
+  "label": "semgrep/mcp",
+  "url": "https://github.com/semgrep/mcp",
+  "repo": "semgrep/mcp",
+  "description": "Scan code for security issues with Semgrep"
+ },
+ {
+  "category": "Security and Code Quality",
+  "label": "SonarSource/sonarqube-mcp-server",
+  "url": "https://github.com/SonarSource/sonarqube-mcp-server",
+  "repo": "SonarSource/sonarqube-mcp-server",
+  "description": "SonarQube code quality and security analysis"
+ },
+ {
+  "category": "Security and Code Quality",
+  "label": "cycodehq/cycode-cli",
+  "url": "https://github.com/cycodehq/cycode-cli",
+  "repo": "cycodehq/cycode-cli",
+  "description": "Cycode application security scanning"
+ },
+ {
+  "category": "Security and Code Quality",
+  "label": "1Password",
+  "url": "https://www.1password.dev/environments/mcp-server",
+  "repo": null,
+  "description": "Manage 1Password Environments without exposing secrets"
+ },
+ {
+  "category": "Security and Code Quality",
+  "label": "Malwarebytes",
+  "url": "https://claude.com/marketplace/connectors/malwarebytes",
+  "repo": null,
+  "description": "Scam checks for links, emails and phone numbers"
+ },
+ {
+  "category": "Security and Code Quality",
+  "label": "Snyk",
+  "url": "https://github.com/snyk/studio-mcp",
+  "repo": "snyk/studio-mcp",
+  "description": "Snyk security scanning inside agentic workflows"
+ },
+ {
+  "category": "Security and Code Quality",
+  "label": "Bitwarden",
+  "url": "https://github.com/bitwarden/mcp-server",
+  "repo": "bitwarden/mcp-server",
+  "description": "Interact with Bitwarden vaults"
+ },
+ {
+  "category": "Security and Code Quality",
+  "label": "CrowdStrike",
+  "url": "https://github.com/CrowdStrike/falcon-mcp",
+  "repo": "CrowdStrike/falcon-mcp",
+  "description": "Connect agents to CrowdStrike Falcon for security operations"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "elie222/inbox-zero",
+  "url": "https://github.com/elie222/inbox-zero",
+  "repo": "elie222/inbox-zero",
+  "description": "Open source AI email assistant"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "Doist/todoist-mcp",
+  "url": "https://github.com/Doist/todoist-mcp",
+  "repo": "Doist/todoist-mcp",
+  "description": "Manage Todoist tasks and projects"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "ankimcp/anki-mcp-server",
+  "url": "https://github.com/ankimcp/anki-mcp-server",
+  "repo": "ankimcp/anki-mcp-server",
+  "description": "Create and review Anki flashcards"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "makeplane/plane-mcp-server",
+  "url": "https://github.com/makeplane/plane-mcp-server",
+  "repo": "makeplane/plane-mcp-server",
+  "description": "Plane projects, issues and cycles"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "integromat/make-mcp-server",
+  "url": "https://github.com/integromat/make-mcp-server",
+  "repo": "integromat/make-mcp-server",
+  "description": "Run Make automation scenarios as tools"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "taskade/mcp",
+  "url": "https://github.com/taskade/mcp",
+  "repo": "taskade/mcp",
+  "description": "Taskade projects, tasks and agents"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "its-dart/dart-mcp-server",
+  "url": "https://github.com/its-dart/dart-mcp-server",
+  "repo": "its-dart/dart-mcp-server",
+  "description": "Dart project and task management"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "box-community/mcp-server-box",
+  "url": "https://github.com/box-community/mcp-server-box",
+  "repo": "box-community/mcp-server-box",
+  "description": "Search and manage content in Box"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "atlassian/trello-mcp-server",
+  "url": "https://github.com/atlassian/trello-mcp-server",
+  "repo": "atlassian/trello-mcp-server",
+  "description": "Trello boards and cards"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "Asana",
+  "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+  "repo": null,
+  "description": "Official Asana MCP server for tasks and projects"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "ClickUp",
+  "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+  "repo": null,
+  "description": "Official ClickUp MCP server for tasks and docs"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "Calendly",
+  "url": "https://developer.calendly.com/calendly-mcp-server",
+  "repo": null,
+  "description": "Hosted Calendly MCP server for scheduling"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "Cal.com",
+  "url": "https://github.com/calcom/cal-mcp",
+  "repo": "calcom/cal-mcp",
+  "description": "Official Cal.com MCP server for scheduling"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "Granola",
+  "url": "https://docs.granola.ai/help-center/sharing/integrations/mcp",
+  "repo": null,
+  "description": "Granola MCP to query meeting notes and transcripts"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "Readwise",
+  "url": "https://github.com/readwiseio/readwise-mcp",
+  "repo": "readwiseio/readwise-mcp",
+  "description": "Readwise MCP for highlights and saved reading"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "Docusign",
+  "url": "https://developers.docusign.com/platform/mcp-server/",
+  "repo": null,
+  "description": "Hosted Docusign MCP server for agreements and e-signature"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "SignNow",
+  "url": "https://docs.signnow.com/docs/signnow/mcp-server",
+  "repo": null,
+  "description": "SignNow MCP server for e-signature documents and invites"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "DocuSeal",
+  "url": "https://www.docuseal.com/guides/integrate-with-ai-agents-using-mcp",
+  "repo": null,
+  "description": "DocuSeal MCP for templates, submissions, and e-signing"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "IFTTT",
+  "url": "https://help.ifttt.com/hc/en-us/articles/47690989390619-Using-IFTTT-with-AI-Assistants",
+  "repo": null,
+  "description": "IFTTT MCP to trigger applets and automations"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "Udemy Business",
+  "url": "https://business-support.udemy.com/hc/en-us/articles/34213384429335-How-to-Integrate-the-Udemy-Business-MCP-Server-With-Your-AI-Tool",
+  "repo": null,
+  "description": "Search courses and surface learning content"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "Craft",
+  "url": "https://support.craft.do/en/integrate/mcp",
+  "repo": null,
+  "description": "Notes, docs and tasks via Craft remote MCP"
+ },
+ {
+  "category": "Productivity and Project Management",
+  "label": "Pipedream",
+  "url": "https://github.com/PipedreamHQ/pipedream",
+  "repo": "PipedreamHQ/pipedream",
+  "description": "Connect thousands of apps and APIs through Pipedream"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "financial-datasets/mcp-server",
+  "url": "https://github.com/financial-datasets/mcp-server",
+  "repo": "financial-datasets/mcp-server",
+  "description": "Stock market and financial statement data"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "XeroAPI/xero-mcp-server",
+  "url": "https://github.com/XeroAPI/xero-mcp-server",
+  "repo": "XeroAPI/xero-mcp-server",
+  "description": "Xero accounting"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "paypal/agent-toolkit",
+  "url": "https://github.com/paypal/agent-toolkit",
+  "repo": "paypal/agent-toolkit",
+  "description": "PayPal payments and commerce tools for agents"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "square/square-mcp-server",
+  "url": "https://github.com/square/square-mcp-server",
+  "repo": "square/square-mcp-server",
+  "description": "Square payments, catalog and orders"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "twelvedata/mcp",
+  "url": "https://github.com/twelvedata/mcp",
+  "repo": "twelvedata/mcp",
+  "description": "Twelve Data market data"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "ramp-public/ramp_mcp",
+  "url": "https://github.com/ramp-public/ramp_mcp",
+  "repo": "ramp-public/ramp_mcp",
+  "description": "Ramp spend management data"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "chargebee/agentkit",
+  "url": "https://github.com/chargebee/agentkit",
+  "repo": "chargebee/agentkit",
+  "description": "Chargebee subscription billing tools"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Stripe",
+  "url": "https://github.com/stripe/ai",
+  "repo": "stripe/ai",
+  "description": "Stripe AI toolkit including the MCP server"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Plaid",
+  "url": "https://plaid.com/docs/resources/mcp/",
+  "repo": null,
+  "description": "Debug Items and view Link analytics via Dashboard MCP"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Razorpay",
+  "url": "https://github.com/razorpay/razorpay-mcp-server",
+  "repo": "razorpay/razorpay-mcp-server",
+  "description": "Official Razorpay payments API MCP server"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "GoCardless",
+  "url": "https://developer.gocardless.com/developer-tools/mcp/",
+  "repo": null,
+  "description": "Bank payments API docs and integration help"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Brex",
+  "url": "https://developer.brex.com/docs/mcp",
+  "repo": null,
+  "description": "Manage expenses, cards, and transactions in Brex"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Mercury",
+  "url": "https://docs.mercury.com/docs/connecting-mercury-mcp",
+  "repo": null,
+  "description": "Read-only business banking accounts, transactions, and treasury"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Ramp Data",
+  "url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+  "repo": null,
+  "description": "Query Ramp spend data and take actions"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "QuickBooks",
+  "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+  "repo": "intuit/quickbooks-online-mcp-server",
+  "description": "Access QuickBooks Online accounting data and reports"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Gusto",
+  "url": "https://docs.gusto.com/app-integrations/docs/mcp",
+  "repo": null,
+  "description": "Payroll, time-off, and workforce data from Gusto"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Cash App",
+  "url": "https://claude.com/marketplace/connectors/cash-app",
+  "repo": null,
+  "description": "Order by Cash App restaurant discovery and checkout"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Crypto.com",
+  "url": "https://mcp.crypto.com/docs",
+  "repo": null,
+  "description": "Real-time crypto prices, order books, and market data"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "IBKR",
+  "url": "https://www.interactivebrokers.com/en/trading/ai-integrations.php",
+  "repo": null,
+  "description": "Analyze IBKR portfolio, positions, and risk with AI"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "FactSet",
+  "url": "https://developer.factset.com/mcp/factset-ai-ready-data-mcp",
+  "repo": null,
+  "description": "FactSet fundamentals, estimates, prices, and ownership data"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "PitchBook",
+  "url": "https://claude.com/marketplace/connectors/pitchbook",
+  "repo": null,
+  "description": "Private market deals, investors, and company profiles"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Morningstar",
+  "url": "https://developer.morningstar.com/direct-web-services/documentation/mcp-server/morningstar-mcp-server",
+  "repo": null,
+  "description": "Morningstar analyst research and investment data"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "S&P Global",
+  "url": "https://docs.kensho.com/llmreadyapi/mcp",
+  "repo": null,
+  "description": "S&P Capital IQ financial data via Kensho"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "LSEG",
+  "url": "https://www.lseg.com/en/solutions/ai-finance-solutions/lseg-mcp",
+  "repo": null,
+  "description": "LSEG analytics, fundamentals, macro data, and Reuters news"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "MSCI",
+  "url": "https://www.msci.com/data-and-analytics/private-asset-solutions/ai-for-private-markets/private-assets-ai-connector",
+  "repo": null,
+  "description": "MSCI index, risk, and private assets data"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Moody's",
+  "url": "https://www.moodys.com/web/en/us/genai/model-context-protocol.html",
+  "repo": null,
+  "description": "Credit ratings and research via Moody's GenAI data"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Carta",
+  "url": "https://claude.com/marketplace/connectors/carta",
+  "repo": null,
+  "description": "Cap table, investor, and fund data from Carta"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Alpaca",
+  "url": "https://github.com/alpacahq/alpaca-mcp-server",
+  "repo": "alpacahq/alpaca-mcp-server",
+  "description": "Trade stocks, ETFs and crypto through Alpaca"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Equibles",
+  "url": "https://equibles.com/mcp",
+  "repo": null,
+  "description": "SEC fundamentals, filings, earnings-call transcripts, 13F and insider trades"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Invompt",
+  "url": "https://github.com/Invompt/invompt-mcp",
+  "repo": "Invompt/invompt-mcp",
+  "description": "Create and review invoices from an AI assistant"
+ },
+ {
+  "category": "Finance and Payments",
+  "label": "Tapetide",
+  "url": "https://github.com/Tapetide-hq/nse-bse-indian-stock-market-data-mcp",
+  "repo": "Tapetide-hq/nse-bse-indian-stock-market-data-mcp",
+  "description": "Indian NSE and BSE stock data, screener, FII/DII flows"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "line/line-bot-mcp-server",
+  "url": "https://github.com/line/line-bot-mcp-server",
+  "repo": "line/line-bot-mcp-server",
+  "description": "Send messages through a LINE Official Account"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "twilio-labs/mcp",
+  "url": "https://github.com/twilio-labs/mcp",
+  "repo": "twilio-labs/mcp",
+  "description": "Twilio messaging and voice APIs"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "mailtrap/mailtrap-mcp",
+  "url": "https://github.com/mailtrap/mailtrap-mcp",
+  "repo": "mailtrap/mailtrap-mcp",
+  "description": "Send and test email with Mailtrap"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "mailgun/mailgun-mcp-server",
+  "url": "https://github.com/mailgun/mailgun-mcp-server",
+  "repo": "mailgun/mailgun-mcp-server",
+  "description": "Send and track email with Mailgun"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "infobip/mcp",
+  "url": "https://github.com/infobip/mcp",
+  "repo": "infobip/mcp",
+  "description": "Infobip messaging and communication channels"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "Zoom",
+  "url": "https://developers.zoom.us/docs/mcp/",
+  "repo": null,
+  "description": "Official Zoom MCP servers for meetings, chat, and docs"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "Fireflies",
+  "url": "https://docs.fireflies.ai/getting-started/mcp-configuration",
+  "repo": null,
+  "description": "Hosted Fireflies MCP for meeting transcripts and summaries"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "Otter.ai",
+  "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+  "repo": null,
+  "description": "Otter MCP server for meeting transcripts and insights"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "Fathom",
+  "url": "https://developers.fathom.ai/mcp-docs",
+  "repo": null,
+  "description": "Official Fathom MCP for meeting recordings and summaries"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "Intercom",
+  "url": "https://github.com/intercom/intercom-mcp-server",
+  "repo": "intercom/intercom-mcp-server",
+  "description": "Intercom MCP docs for conversations and contacts"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "Resend",
+  "url": "https://github.com/resend/resend-mcp",
+  "repo": "resend/resend-mcp",
+  "description": "Official Resend MCP server for sending emails"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "Elastic Email",
+  "url": "https://github.com/ElasticEmail/elasticemail-mcp-server",
+  "repo": "ElasticEmail/elasticemail-mcp-server",
+  "description": "Send emails, manage contacts, lists and campaigns"
+ },
+ {
+  "category": "Communication and Messaging",
+  "label": "MailerSend",
+  "url": "https://developers.mailersend.com/mcp",
+  "repo": null,
+  "description": "Send transactional email and SMS, manage domains"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "mastra-ai/mastra",
+  "url": "https://github.com/mastra-ai/mastra",
+  "repo": "mastra-ai/mastra",
+  "description": "TypeScript agent framework with MCP support"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "antvis/mcp-server-chart",
+  "url": "https://github.com/antvis/mcp-server-chart",
+  "repo": "antvis/mcp-server-chart",
+  "description": "Generate charts with AntV"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "matlab/matlab-mcp-server",
+  "url": "https://github.com/matlab/matlab-mcp-server",
+  "repo": "matlab/matlab-mcp-server",
+  "description": "Run MATLAB code from AI assistants"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "elevenlabs/elevenlabs-mcp",
+  "url": "https://github.com/elevenlabs/elevenlabs-mcp",
+  "repo": "elevenlabs/elevenlabs-mcp",
+  "description": "Text to speech and voice tools from ElevenLabs"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "SkyworkAI/Mureka-mcp",
+  "url": "https://github.com/SkyworkAI/Mureka-mcp",
+  "repo": "SkyworkAI/Mureka-mcp",
+  "description": "Generate music with Mureka"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "zenml-io/mcp-zenml",
+  "url": "https://github.com/zenml-io/mcp-zenml",
+  "repo": "zenml-io/mcp-zenml",
+  "description": "Inspect ZenML pipelines and runs"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "video-db/agent-toolkit",
+  "url": "https://github.com/video-db/agent-toolkit",
+  "repo": "video-db/agent-toolkit",
+  "description": "Video search and editing with VideoDB"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "cloudinary/mcp-servers",
+  "url": "https://github.com/cloudinary/mcp-servers",
+  "repo": "cloudinary/mcp-servers",
+  "description": "Cloudinary media management and transformation"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "OpenRouter",
+  "url": "https://openrouter.ai/docs/guides/overview/mcp-server",
+  "repo": null,
+  "description": "Access models through OpenRouter"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "MiniMax",
+  "url": "https://github.com/MiniMax-AI/MiniMax-MCP",
+  "repo": "MiniMax-AI/MiniMax-MCP",
+  "description": "Text-to-speech, image and video generation APIs"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Adobe for creativity",
+  "url": "https://claude.com/marketplace/connectors/adobe-creativity",
+  "repo": null,
+  "description": "Photoshop, Express and Firefly tools inside Claude"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Lottie Creator",
+  "url": "https://docs.lottiefiles.com/en/creator/13_ai-tools/lottie-creator-mcp",
+  "repo": null,
+  "description": "Build and edit Lottie animations with AI"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Rive",
+  "url": "https://rive.app/docs/editor/ai/mcp",
+  "repo": null,
+  "description": "Control the Rive editor and animations via MCP"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Picsart",
+  "url": "https://github.com/PicsArt/picsart-mcp-cli-docs",
+  "repo": "PicsArt/picsart-mcp-cli-docs",
+  "description": "Generate images, video and audio across many models"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Blender MCP",
+  "url": "https://github.com/ahujasid/blender-mcp",
+  "repo": "ahujasid/blender-mcp",
+  "description": "Control Blender 3D scenes from AI assistants"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "VoltAgent",
+  "url": "https://github.com/VoltAgent/voltagent/tree/main/packages/mcp-server",
+  "repo": "VoltAgent/voltagent",
+  "description": "Expose VoltAgent agents, tools and workflows via MCP"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Lara Translate",
+  "url": "https://github.com/translated/lara-mcp",
+  "repo": "translated/lara-mcp",
+  "description": "Professional translation with glossaries and memories"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Microsoft MarkItDown",
+  "url": "https://github.com/microsoft/markitdown/tree/main/packages/markitdown-mcp",
+  "repo": "microsoft/markitdown",
+  "description": "Convert files and documents to Markdown for LLMs"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Screenpipe",
+  "url": "https://github.com/screenpipe/screenpipe",
+  "repo": "screenpipe/screenpipe",
+  "description": "Local screen and audio capture indexed for AI"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Vizro",
+  "url": "https://github.com/mckinsey/vizro/tree/main/vizro-mcp",
+  "repo": "mckinsey/vizro",
+  "description": "Build validated charts and dashboards with Vizro"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Tableau",
+  "url": "https://github.com/tableau/tableau-mcp",
+  "repo": "tableau/tableau-mcp",
+  "description": "Let agents explore and query Tableau data"
+ },
+ {
+  "category": "AI, Media and Data Visualization",
+  "label": "Docling",
+  "url": "https://github.com/docling-project/docling-mcp",
+  "repo": "docling-project/docling-mcp",
+  "description": "Document conversion and processing with Docling"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Figma",
+  "url": "https://github.com/figma/mcp-server-guide",
+  "repo": "figma/mcp-server-guide",
+  "description": "Figma design context for code generation"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Canva",
+  "url": "https://www.canva.dev/docs/apps/mcp/",
+  "repo": null,
+  "description": "Create and edit Canva designs"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Miro",
+  "url": "https://claude.com/marketplace/connectors/miro",
+  "repo": null,
+  "description": "Miro boards and diagrams"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Notion",
+  "url": "https://github.com/makenotion/notion-mcp-server",
+  "repo": "makenotion/notion-mcp-server",
+  "description": "Notion pages and databases"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Linear",
+  "url": "https://linear.app/docs/mcp",
+  "repo": null,
+  "description": "Linear issues and projects"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Atlassian",
+  "url": "https://github.com/atlassian/atlassian-mcp-server",
+  "repo": "atlassian/atlassian-mcp-server",
+  "description": "Jira and Confluence from Atlassian"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Slack",
+  "url": "https://docs.slack.dev/ai/mcp-server",
+  "repo": null,
+  "description": "Slack messages and channels"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Gamma",
+  "url": "https://developers.gamma.app/",
+  "repo": null,
+  "description": "Generate decks, docs and sites with Gamma"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Excalidraw",
+  "url": "https://github.com/excalidraw/excalidraw-mcp",
+  "repo": "excalidraw/excalidraw-mcp",
+  "description": "Streamable Excalidraw MCP app for hand-drawn diagrams"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "tldraw",
+  "url": "https://github.com/tldraw/tldraw/tree/main/apps/mcp-app",
+  "repo": "tldraw/tldraw",
+  "description": "Interactive tldraw canvas for AI agents"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Lucid",
+  "url": "https://github.com/lucidsoftware/lucid-mcp-server",
+  "repo": "lucidsoftware/lucid-mcp-server",
+  "description": "Create and search Lucid diagrams from AI"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Whimsical",
+  "url": "https://github.com/WhimsicalCode/mcp-server-guide",
+  "repo": "WhimsicalCode/mcp-server-guide",
+  "description": "Boards, flowcharts and wireframes in Whimsical workspaces"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Mermaid Chart",
+  "url": "https://mermaid.ai/docs/ai/mcp-server",
+  "repo": null,
+  "description": "Validate, render and manage Mermaid diagrams"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Icons8",
+  "url": "https://github.com/icons8/icons8-mcp",
+  "repo": "icons8/icons8-mcp",
+  "description": "Massive icon library for AI coding tools"
+ },
+ {
+  "category": "Design and Collaboration",
+  "label": "Magic Patterns",
+  "url": "https://www.magicpatterns.com/docs/documentation/features/mcp-server/overview",
+  "repo": null,
+  "description": "Bring Magic Patterns designs into AI coding tools"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Booking.com",
+  "url": "https://developers.booking.com/mcp-server/docs/about",
+  "repo": null,
+  "description": "Search hotels and stays with filters and prices"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Expedia",
+  "url": "https://github.com/ExpediaGroup/expedia-travel-recommendations-mcp",
+  "repo": "ExpediaGroup/expedia-travel-recommendations-mcp",
+  "description": "Hotel, flight, activity and car travel recommendations"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Tripadvisor",
+  "url": "https://claude.com/marketplace/connectors/tripadvisor",
+  "repo": null,
+  "description": "Hotel details, reviews, ratings and nearby attractions"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Trivago",
+  "url": "https://mcp.trivago.com",
+  "repo": null,
+  "description": "Accommodation search, radius search and price trends"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Uber",
+  "url": "https://claude.com/marketplace/connectors/uber",
+  "repo": null,
+  "description": "Ride estimates, fares and ride product comparison"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Uber Eats",
+  "url": "https://claude.com/marketplace/connectors/uber-eats",
+  "repo": null,
+  "description": "Browse restaurants and order food delivery"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Instacart",
+  "url": "https://docs.instacart.com/mcp_servers",
+  "repo": null,
+  "description": "Grocery shopping lists and recipe pages"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Spotify",
+  "url": "https://claude.com/marketplace/connectors/spotify",
+  "repo": null,
+  "description": "Music and podcast discovery and recommendations"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Strava",
+  "url": "https://claude.com/marketplace/connectors/strava",
+  "repo": null,
+  "description": "Access activities, routes and training history"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Zomato",
+  "url": "https://github.com/Zomato/mcp-server-manifest",
+  "repo": "Zomato/mcp-server-manifest",
+  "description": "Search restaurants, build carts and order food"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "StubHub",
+  "url": "https://claude.com/marketplace/connectors/stubhub",
+  "repo": null,
+  "description": "Live event tickets, availability and pricing"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Viator",
+  "url": "https://docs.viator.com/partner-api/mcp/",
+  "repo": null,
+  "description": "Search tours, activities and experience details"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Home Assistant",
+  "url": "https://www.home-assistant.io/integrations/mcp_server/",
+  "repo": null,
+  "description": "Expose smart home entities to MCP clients"
+ },
+ {
+  "category": "Travel and Lifestyle",
+  "label": "Audible",
+  "url": "https://claude.com/marketplace/connectors/audible",
+  "repo": null,
+  "description": "Audiobook recommendations by genre, mood and topic"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "mapbox/mcp-server",
+  "url": "https://github.com/mapbox/mcp-server",
+  "repo": "mapbox/mcp-server",
+  "description": "Mapbox geocoding, directions and maps"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "webflow/mcp-server",
+  "url": "https://github.com/webflow/mcp-server",
+  "repo": "webflow/mcp-server",
+  "description": "Manage Webflow sites and CMS content"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "jsdelivr/globalping-mcp-server",
+  "url": "https://github.com/jsdelivr/globalping-mcp-server",
+  "repo": "jsdelivr/globalping-mcp-server",
+  "description": "Network diagnostics from global probes with Globalping"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "blockscout/mcp-server",
+  "url": "https://github.com/blockscout/mcp-server",
+  "repo": "blockscout/mcp-server",
+  "description": "Blockchain explorer data from Blockscout"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "apolloio/apollo-mcp-plugin",
+  "url": "https://github.com/apolloio/apollo-mcp-plugin",
+  "repo": "apolloio/apollo-mcp-plugin",
+  "description": "Apollo.io prospecting and sales data"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "growthbook/growthbook-mcp",
+  "url": "https://github.com/growthbook/growthbook-mcp",
+  "repo": "growthbook/growthbook-mcp",
+  "description": "GrowthBook feature flags and experiments"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Unleash/unleash-mcp",
+  "url": "https://github.com/Unleash/unleash-mcp",
+  "repo": "Unleash/unleash-mcp",
+  "description": "Unleash feature flag management"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Tally",
+  "url": "https://developers.tally.so/api-reference/mcp",
+  "repo": null,
+  "description": "Tally MCP server to build forms and read submissions"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Jotform",
+  "url": "https://github.com/jotform/mcp-server",
+  "repo": "jotform/mcp-server",
+  "description": "Jotform MCP server for forms and submissions"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "HubSpot",
+  "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+  "repo": null,
+  "description": "Remote HubSpot MCP server for CRM data"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Attio",
+  "url": "https://docs.attio.com/mcp/overview",
+  "repo": null,
+  "description": "Hosted Attio MCP server for CRM workspace"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Clay",
+  "url": "https://university.clay.com/docs/mcp-settings",
+  "repo": null,
+  "description": "Clay MCP for prospecting and data enrichment"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Mailchimp",
+  "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+  "repo": null,
+  "description": "Mailchimp Transactional MCP for email templates and sending"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Klaviyo",
+  "url": "https://developers.klaviyo.com/en/v2025-04-15/docs/klaviyo_mcp_server",
+  "repo": null,
+  "description": "Klaviyo MCP for campaigns, profiles, and marketing analytics"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Bitly",
+  "url": "https://dev.bitly.com/bitly-mcp/",
+  "repo": null,
+  "description": "Hosted Bitly MCP for links, QR codes, analytics"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Semrush",
+  "url": "https://developer.semrush.com/api/v4/introduction/semrush-mcp/",
+  "repo": null,
+  "description": "Semrush MCP for SEO, keyword, and backlink data"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Ahrefs",
+  "url": "https://docs.ahrefs.com/docs/mcp/introduction",
+  "repo": null,
+  "description": "Ahrefs MCP for SEO, backlinks, and keyword research"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Wix",
+  "url": "https://github.com/wix/wix-mcp",
+  "repo": "wix/wix-mcp",
+  "description": "Wix MCP server for site APIs and docs"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "WordPress.com",
+  "url": "https://developer.wordpress.com/docs/mcp/",
+  "repo": null,
+  "description": "WordPress.com MCP server for managing site content"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "GoDaddy",
+  "url": "https://developer.godaddy.com/en/docs/api-users/mcp",
+  "repo": null,
+  "description": "Domain name search and availability checks"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "MailerLite",
+  "url": "https://developers.mailerlite.com/mcp",
+  "repo": null,
+  "description": "Manage subscribers, campaigns, groups and segments"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Supermetrics",
+  "url": "https://github.com/supermetrics-public/supermetrics-mcp",
+  "repo": "supermetrics-public/supermetrics-mcp",
+  "description": "Query live marketing data from 170+ platforms"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "Shopify",
+  "url": "https://shopify.dev/docs/apps/build/devmcp",
+  "repo": null,
+  "description": "Shopify docs, API schema, and store tooling for AI"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "WordPress",
+  "url": "https://github.com/WordPress/mcp-adapter",
+  "repo": "WordPress/mcp-adapter",
+  "description": "Expose WordPress abilities as MCP tools"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "BulkPublish",
+  "url": "https://github.com/azeemkafridi/bulkpublish-api/tree/main/mcp-server",
+  "repo": "azeemkafridi/bulkpublish-api",
+  "description": "Schedule, cross-post and analyze social posts on 15 platforms"
+ },
+ {
+  "category": "Web, Marketing and Product",
+  "label": "SendPulse",
+  "url": "https://sendpulse.com/features/mcp",
+  "repo": null,
+  "description": "Official MCP server for SendPulse multichannel marketing automation platform"
+ }
+]

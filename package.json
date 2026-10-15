@@ -1,0 +1,15 @@
+{
+  "name": "mcp-rank",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "官方 MCP 服务器排行榜：点赞 / 收藏 / 评分 / 评价",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "refresh": "node scripts/refresh.mjs",
+    "probe": "node scripts/probe-status.mjs"
+  }
+}

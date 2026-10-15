@@ -1,0 +1,4 @@
+data/app.db
+data/app.db-*
+data/raw-registry.jsonl
+node_modules/

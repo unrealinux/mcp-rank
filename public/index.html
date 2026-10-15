@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>可接入的 MCP 服务器</title>
+<meta name="description" content="13,779 个可接入 Agent 的公开 MCP server，点赞、收藏、评分与评价。" />
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>可接入的 MCP 服务器</h1>
+    <p class="sub">
+      接入方式与元数据来自
+      <a href="https://registry.modelcontextprotocol.io/" target="_blank" rel="noopener">MCP 官方 Registry</a>，
+      人气来自 GitHub，接入可用性为实测结果（✅ 可直接连 / 🔑 需密钥 / ❌ 失联 / 无标记＝未检测）。综合分 = 45% 星标 + 30% 用户评分 + 25% 用户点赞收藏。
+      <span id="meta"></span>
+    </p>
+    <div class="controls">
+      <input id="q" type="search" placeholder="搜索名称、说明、仓库…" autocomplete="off" />
+      <select id="sort">
+        <option value="hot">综合分</option>
+        <option value="stars">GitHub 星标</option>
+        <option value="rating">用户评分</option>
+        <option value="likes">点赞 + 收藏</option>
+        <option value="name">名称</option>
+      </select>
+      <select id="kind">
+        <option value="all">全部接入方式</option>
+        <option value="remote">URL 直连</option>
+        <option value="stdio">本地 stdio</option>
+        <option value="verified">✅ 已验证能连</option>
+        <option value="official">厂商官方</option>
+        <option value="mine">我评价/点赞过的</option>
+      </select>
+    </div>
+    <aside id="ad-top" class="ad-slot" hidden></aside>
+  </div>
+</header>
+
+<main class="wrap">
+  <p id="count" class="count"></p>
+  <ol id="board" class="board"></ol>
+  <p id="empty" class="empty" hidden>没有匹配的服务器。</p>
+  <aside id="ad-footer" class="ad-slot" hidden></aside>
+</main>
+
+<dialog id="detail">
+  <div class="detail-head">
+    <div>
+      <h2 id="d-title"></h2>
+      <p id="d-sub" class="muted"></p>
+    </div>
+    <button id="d-close" class="icon" aria-label="关闭">✕</button>
+  </div>
+  <p id="d-summary"></p>
+  <div id="d-connect" class="c-ep"></div>
+  <dl id="d-info" class="info"></dl>
+  <div class="actions">
+    <button id="d-like" class="btn">👍 点赞</button>
+    <button id="d-fav" class="btn">⭐ 收藏</button>
+  </div>
+  <section class="review-box">
+    <h3>评价</h3>
+    <form id="review-form">
+      <div id="stars" class="stars" role="radiogroup" aria-label="评分"></div>
+      <textarea id="review-text" maxlength="1000" rows="3" placeholder="它好用在哪？有什么坑？（可选，最多 1000 字）"></textarea>
+      <button class="btn primary" type="submit">提交评价</button>
+      <span id="review-msg" class="msg" role="status"></span>
+    </form>
+    <ul id="review-list" class="review-list"></ul>
+  </section>
+</dialog>
+
+<script src="/ads.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
