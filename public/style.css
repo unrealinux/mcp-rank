@@ -50,6 +50,8 @@ input[type="search"] { flex: 1 1 260px; }
 .tag.ok { border-color: #4ade80; color: #4ade80; }
 .tag.warn { border-color: var(--gold); color: var(--gold); }
 .tag.bad { border-color: #f87171; color: #f87171; }
+.tag.new { border-color: #38bdf8; color: #38bdf8; }
+.card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .c-ep { display: flex; gap: 8px; align-items: center; margin: 6px 0; }
 .c-ep code {
   flex: 1 1 auto; background: var(--panel-2); border: 1px solid var(--line); border-radius: 7px;

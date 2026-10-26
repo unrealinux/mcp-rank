@@ -3,7 +3,7 @@
 // /api/stats      —— 每条的分数/点赞/评分（只有有信号的条目），投票后只需重拉这个。
 const $ = (sel) => document.querySelector(sel);
 const CAP = 300; // DOM 行数上限，超过必须靠搜索缩小
-const state = { list: [], stats: {}, status: {}, q: '', kind: 'all', sort: 'hot', current: null, rating: 0 };
+const state = { list: [], stats: {}, status: {}, pkg: {}, q: '', kind: 'all', sort: 'hot', current: null, rating: 0 };
 
 const api = async (path, init) => {
   const res = await fetch(path, { credentials: 'same-origin', headers: { 'Content-Type': 'application/json' }, ...init });
@@ -14,6 +14,18 @@ const api = async (path, init) => {
 
 const stars = (n) => (n >= 1000 ? `${(n / 1000).toFixed(1)}k` : String(n ?? 0));
 const endpoint = (s) => (s.connect.kind === 'stdio' ? `${s.connect.command} ${s.connect.args.join(' ')}` : s.connect.url);
+
+// 一键 mcpServers 配置片段：站长口号是「能直接接进 Agent」，这里把最后一步也替用户走完。
+const configSnippet = (s) => {
+  const key = s.name.split('/').pop().replace(/[^A-Za-z0-9_-]/g, '-');
+  const inner =
+    s.connect.kind === 'remote' ? { url: s.connect.url } : { command: s.connect.command, args: s.connect.args };
+  return JSON.stringify({ mcpServers: { [key]: inner } }, null, 2);
+};
+
+// 新上架 / 久未维护的时间阈值。
+const NEW_MS = 14 * 86_400_000;
+const STALE_MS = 365 * 86_400_000;
 
 // ---- 广告位 -----------------------------------------------------------------
 // 内容在 public/ads.js 里填，留空则显示招租占位。
@@ -47,23 +59,65 @@ fillAd($('#ad-top'), 'top');
 fillAd($('#ad-footer'), 'footer');
 
 const copyText = async (text, btn) => {
+  const prev = btn.textContent;
   try {
     await navigator.clipboard.writeText(text);
     btn.textContent = '已复制';
   } catch { btn.textContent = '复制失败'; }
-  setTimeout(() => (btn.textContent = '复制'), 1200);
+  setTimeout(() => (btn.textContent = prev), 1200);
 };
 
-const rows = () => state.list.map((s) => ({ ...s, ...(state.stats[s.name] ?? {}) }));
+// Merged view (list + stats). Worth caching: rebuilds 13k objects per call, which used to
+// happen on every keystroke. Invalidated only when list or stats actually change.
+let merged = null;
+const rows = () => {
+  if (!merged) merged = state.list.map((s) => ({ ...s, ...(state.stats[s.name] ?? {}) }));
+  return merged;
+};
+const invalidateRows = () => (merged = null);
 
-// Liveness badge for remote endpoints; stdio entries are not probed and get no badge.
+// ---- URL 同步 ------------------------------------------------------------------
+// hash = #q=...&kind=...&sort=...&s=<name>。搜索/筛选/排序变化用 replaceState（不产生历史记录）；
+// 打开详情 pushState（浏览器返回键可关弹窗），Esc/✕ 关闭时 history.back() 弹掉那条记录。
+let booted = false;
+let hashEntry = false; // 详情弹窗是否占用了一条历史记录
+const KINDS = ['all', 'remote', 'stdio', 'verified', 'official', 'mine', 'recent'];
+const SORTS = ['hot', 'stars', 'rating', 'likes', 'active', 'name'];
+const parseHash = () => {
+  const p = new URLSearchParams(location.hash.slice(1));
+  const q = p.get('q') ?? '';
+  const kind = KINDS.includes(p.get('kind')) ? p.get('kind') : 'all';
+  const sort = SORTS.includes(p.get('sort')) ? p.get('sort') : 'hot';
+  return { q, kind, sort, server: p.get('s') };
+};
+const hashStr = (server) => {
+  const p = new URLSearchParams();
+  if (state.q.trim()) p.set('q', state.q.trim());
+  if (state.kind !== 'all') p.set('kind', state.kind);
+  if (state.sort !== 'hot') p.set('sort', state.sort);
+  if (server) p.set('s', server);
+  const qs = p.toString();
+  return qs ? `#${qs}` : '#';
+};
+const replaceHash = (server) => history.replaceState(null, '', hashStr(server));
+const hashHasServer = () => new URLSearchParams(location.hash.slice(1)).has('s');
+
+// Liveness badge: remote 看探活结果，stdio 看包存在性，download 无实测。
 const BADGE = {
   ok: ['✅ 已验证', 'tag ok'],
   auth: ['🔑 需密钥', 'tag warn'],
   error: ['❌ 失联', 'tag bad'],
   dead: ['❌ 失联', 'tag bad'],
 };
-const badgeOf = (name) => BADGE[state.status[name]?.status];
+const PKG_BADGE = { ok: ['📦 包在线', 'tag ok'], missing: ['📦 包已失效', 'tag bad'] };
+const badgeOf = (s) => {
+  if (s.connect.kind === 'stdio') return PKG_BADGE[state.pkg[s.name]?.status];
+  if (s.connect.kind === 'remote') return BADGE[state.status[s.name]?.status];
+  return null;
+};
+const freshTag = (s) => (s.since && Date.now() - new Date(s.since).getTime() < NEW_MS ? ['新上架', 'tag new'] : null);
+const staleTag = (s) =>
+  s.pushedAt && Date.now() - new Date(s.pushedAt).getTime() > STALE_MS ? ['久未维护', 'tag warn'] : null;
 
 function visible() {
   const q = state.q.trim().toLowerCase();
@@ -72,6 +126,7 @@ function visible() {
     if (state.kind === 'stdio' && s.connect.kind !== 'stdio') return false;
     if (state.kind === 'official' && !s.official) return false;
     if (state.kind === 'verified' && state.status[s.name]?.status !== 'ok') return false;
+    if (state.kind === 'recent' && !(s.since && Date.now() - new Date(s.since).getTime() < 30 * 86_400_000)) return false;
     if (state.kind === 'mine' && !s.myVotes?.length && !s.myReview) return false;
     if (!q) return true;
     return [s.title, s.name, s.description, s.repo].some((v) => (v ?? '').toLowerCase().includes(q));
@@ -81,6 +136,8 @@ function visible() {
     stars: (a, b) => (b.stars ?? -1) - (a.stars ?? -1),
     rating: (a, b) => (b.avgRating ?? 0) - (a.avgRating ?? 0) || (b.reviewCount ?? 0) - (a.reviewCount ?? 0),
     likes: (a, b) => (b.likes ?? 0) + 2 * (b.favorites ?? 0) - ((a.likes ?? 0) + 2 * (a.favorites ?? 0)),
+    // 最近活跃：按仓库最后推送时间；无数据（未纳入 stats 的长尾）排最后。
+    active: (a, b) => new Date(b.pushedAt ?? 0) - new Date(a.pushedAt ?? 0) || (b.stars ?? 0) - (a.stars ?? 0),
     name: (a, b) => a.title.localeCompare(b.title),
   };
   return list.sort(by[state.sort]);
@@ -96,8 +153,10 @@ function card(s) {
   title.append(s.title);
   for (const [text, cls] of [
     [s.connect.kind === 'remote' ? s.connect.type : s.connect.kind, 'tag'],
-    ...(badgeOf(s.name) ? [badgeOf(s.name)] : []),
+    ...(badgeOf(s) ? [badgeOf(s)] : []),
     ...(s.official ? [['官方', 'tag gold']] : []),
+    ...(freshTag(s) ? [freshTag(s)] : []),
+    ...(staleTag(s) ? [staleTag(s)] : []),
   ]) {
     const tag = document.createElement('span');
     tag.className = cls;
@@ -163,6 +222,16 @@ function card(s) {
   right.append(small);
 
   li.append(mid, right);
+  // 键盘可达：卡片本质是「打开详情」的按钮，Tab 能到、Enter/空格能触发。
+  li.tabIndex = 0;
+  li.setAttribute('role', 'button');
+  li.setAttribute('aria-label', `${s.title}，查看详情`);
+  li.onkeydown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openDetail(s.name);
+    }
+  };
   li.onclick = () => openDetail(s.name);
   return li;
 }
@@ -176,6 +245,7 @@ function render() {
   if (nodes.length > 3) nodes.splice(3, 0, adRow('inline'));
   $('#board').replaceChildren(...nodes);
   $('#empty').hidden = list.length > 0;
+  if (booted) replaceHash(state.current);
 }
 
 async function vote(id, kind, on) {
@@ -202,7 +272,7 @@ function starRow() {
   );
 }
 
-async function openDetail(id) {
+async function openDetail(id, push = true) {
   const s = rows().find((x) => x.name === id);
   if (!s) return;
   state.current = id;
@@ -220,9 +290,32 @@ async function openDetail(id) {
   copy.textContent = '复制';
   copy.onclick = () => copyText(endpoint(s), copy);
   box.replaceChildren(code, copy);
+  // .mcpb 下载包没有 config 结构，只给 endpoint 复制。
+  if (s.connect.kind !== 'download') {
+    const cfg = document.createElement('button');
+    cfg.type = 'button';
+    cfg.className = 'copy';
+    cfg.textContent = '复制配置';
+    cfg.onclick = () => copyText(configSnippet(s), cfg);
+    box.append(cfg);
+  }
 
+  const availability = () => {
+    if (s.connect.kind === 'stdio') {
+      const p = state.pkg[s.name];
+      return p ? `${PKG_BADGE[p.status]?.[0] ?? '❓ 未知'}　${new Date(p.at).toLocaleDateString('zh-CN')}` : '未检测';
+    }
+    if (s.connect.kind === 'remote') {
+      return state.status[s.name]
+        ? `${badgeOf(s)?.[0] ?? '❓ 未知'}　${new Date(state.status[s.name].at).toLocaleDateString('zh-CN')}`
+        : '未检测';
+    }
+    return null;
+  };
+  const staleHint = (staleTag(s) ? '　⚠️ 超 1 年未推送' : '');
   const rowsHtml = [
-    ['可用性', null, state.status[s.name] ? `${badgeOf(s.name)?.[0] ?? '❓ 未知'}　${new Date(state.status[s.name].at).toLocaleDateString('zh-CN')}` : '未检测'],
+    ['可用性', null, availability()],
+    ['最近更新', null, s.pushedAt ? `${new Date(s.pushedAt).toLocaleDateString('zh-CN')}${staleHint}` : null],
     ['Registry', `https://registry.modelcontextprotocol.io/v0/servers?search=${encodeURIComponent(s.name)}`, s.name],
     ['GitHub', s.repo, s.repo ? s.repo.replace(/^https:\/\/github\.com\//, '') : null],
     ['官网', s.website, s.website],
@@ -255,9 +348,19 @@ async function openDetail(id) {
   $('#d-fav').textContent = `⭐ 收藏 ${s.favorites ?? 0}`;
   $('#review-text').value = s.myReview?.text ?? '';
   $('#review-msg').textContent = '';
+  $('#review-delete').hidden = !s.myReview;
   starRow();
   const dialog = $('#detail');
-  if (!dialog.open) dialog.showModal();
+  if (!dialog.open) {
+    dialog.showModal();
+    // 弹窗首次打开：push 一条历史记录（浏览器返回键=关闭弹窗）；已在弹窗中的刷新无需再 push。
+    if (push) {
+      hashEntry = true;
+      history.pushState(null, '', hashStr(id));
+    }
+  } else if (!hashHasServer()) {
+    replaceHash(id);
+  }
   await loadReviews(id);
 }
 
@@ -283,6 +386,8 @@ async function loadStats() {
   const data = await api('/api/stats');
   state.stats = data.stats;
   state.status = data.status ?? {};
+  state.pkg = data.pkg ?? {};
+  invalidateRows();
   render();
 }
 
@@ -291,15 +396,68 @@ async function load() {
   state.list = list;
   state.stats = stats.stats;
   state.status = stats.status ?? {};
+  state.pkg = stats.pkg ?? {};
+  invalidateRows();
   const probed = Object.keys(state.status).length;
   $('#meta').textContent = `数据更新：${new Date(stats.updatedAt).toLocaleString('zh-CN')}　接入可用性已抽检 ${probed} 条`;
   render();
 }
 
-$('#q').oninput = (e) => { state.q = e.target.value; render(); };
+// ---- 事件与启动 ---------------------------------------------------------------
+// 首次进入先把 hash 里的筛选状态套到控件上，深链/分享的 URL 一次到位。
+Object.assign(state, parseHash());
+delete state.server;
+$('#q').value = state.q;
+$('#sort').value = state.sort;
+$('#kind').value = state.kind;
+
+// Debounced: each keystroke used to rebuild merged rows + up to 300 cards.
+let qTimer;
+$('#q').oninput = (e) => {
+  clearTimeout(qTimer);
+  qTimer = setTimeout(() => {
+    state.q = e.target.value;
+    render();
+  }, 150);
+};
 $('#sort').onchange = (e) => { state.sort = e.target.value; render(); };
 $('#kind').onchange = (e) => { state.kind = e.target.value; render(); };
 $('#d-close').onclick = () => $('#detail').close();
+
+// ⓧ 按钮和 Esc 都走这里。弹窗用 push 占过一条历史，就 back 弹掉；否则只清 hash。
+$('#detail').addEventListener('close', () => {
+  state.current = null;
+  if (hashEntry) {
+    hashEntry = false;
+    history.back(); // popstate 里会自然落到「弹窗已关」的分支
+  } else {
+    replaceHash();
+  }
+});
+
+// 前进/后退（含返回键关弹窗）：以 hash 为准重算筛选与弹窗。
+window.addEventListener('popstate', () => {
+  if (!booted) return;
+  const h = parseHash();
+  if (h.q !== state.q || h.kind !== state.kind || h.sort !== state.sort) {
+    state.q = h.q;
+    state.kind = h.kind;
+    state.sort = h.sort;
+    $('#q').value = state.q;
+    $('#sort').value = state.sort;
+    $('#kind').value = state.kind;
+    render();
+  }
+  // 弹窗已关（Esc/✕ 路径的 back 落到这里）时对齐 state；close 事件通常已把它清空。
+  if (!$('#detail').open) state.current = null;
+  const found = h.server && rows().find((x) => x.name === h.server);
+  if (found && h.server !== state.current) {
+    openDetail(h.server, false); // 历史记录已有这条 URL，不再 push
+  } else if (!found && state.current && $('#detail').open) {
+    $('#detail').close();
+  }
+});
+
 $('#d-like').onclick = () => { const s = rows().find((x) => x.name === state.current); vote(s.name, 'like', !(s.myVotes ?? []).includes('like')); };
 $('#d-fav').onclick = () => { const s = rows().find((x) => x.name === state.current); vote(s.name, 'favorite', !(s.myVotes ?? []).includes('favorite')); };
 $('#review-form').onsubmit = async (e) => {
@@ -315,9 +473,30 @@ $('#review-form').onsubmit = async (e) => {
     await openDetail(state.current);
   } catch (err) { $('#review-msg').textContent = err.message; }
 };
+$('#review-delete').onclick = async (e) => {
+  e.preventDefault();
+  try {
+    await api(`/api/servers/${encodeURIComponent(state.current)}/reviews`, { method: 'DELETE' });
+    $('#review-msg').textContent = '已删除我的评价。';
+    state.rating = 0;
+    await loadStats();
+    await openDetail(state.current);
+  } catch (err) { $('#review-msg').textContent = err.message; }
+};
 
-load().catch((err) => {
-  $('#board').replaceChildren();
-  $('#empty').hidden = false;
-  $('#empty').textContent = err.message;
-});
+load()
+  .then(() => {
+    booted = true;
+    const h = parseHash();
+    if (h.server) {
+      if (rows().find((x) => x.name === h.server)) openDetail(h.server, false); // 直达深链：不再加历史记录
+      else replaceHash(); // 无效 server id：丢弃 s 参数
+    } else {
+      replaceHash(); // 归一化（去掉不认识的参数）
+    }
+  })
+  .catch((err) => {
+    $('#board').replaceChildren();
+    $('#empty').hidden = false;
+    $('#empty').textContent = err.message;
+  });

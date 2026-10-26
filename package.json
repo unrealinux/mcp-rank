@@ -10,6 +10,8 @@
   "scripts": {
     "start": "node server.mjs",
     "refresh": "node scripts/refresh.mjs",
-    "probe": "node scripts/probe-status.mjs"
+    "probe": "node scripts/probe-status.mjs",
+    "probe:pkgs": "node scripts/probe-packages.mjs",
+    "test": "node --test"
   }
 }

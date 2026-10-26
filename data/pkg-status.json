@@ -1,0 +1,23 @@
+{
+ "checkedAt": "2026-10-25T17:48:47.244Z",
+ "results": {
+  "io.github.ChromeDevTools/chrome-devtools-mcp": {
+   "pkg": "chrome-devtools-mcp",
+   "status": "ok",
+   "http": 200,
+   "at": "2026-10-25T17:48:47.118Z"
+  },
+  "com.microsoft/azure": {
+   "pkg": "azure.mcp",
+   "status": "ok",
+   "http": 200,
+   "at": "2026-10-25T17:48:47.159Z"
+  },
+  "ai.ankimcp/anki-mcp-server": {
+   "pkg": "@ankimcp/anki-mcp-server",
+   "status": "ok",
+   "http": 200,
+   "at": "2026-10-25T17:48:47.242Z"
+  }
+ }
+}

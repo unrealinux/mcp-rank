@@ -3,11 +3,16 @@
 import { createServer } from 'node:http';
 import { readFileSync, existsSync, mkdirSync } from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
-import { randomUUID } from 'node:crypto';
-import { join, normalize, extname } from 'node:path';
+import { gzipSync } from 'node:zlib';
+import { createHash, randomUUID } from 'node:crypto';
+import { scoreOf } from './lib/rank.mjs';
+import { fileURLToPath } from 'node:url';
+import { join, normalize, extname, dirname } from 'node:path';
 
 const PORT = Number(process.env.PORT ?? 8787);
-const PUBLIC_DIR = new URL('./public/', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1');
+// fileURLToPath, not .pathname: .pathname keeps percent-encoding, which breaks any non-ASCII
+// directory (e.g. 文档) for SQLite and path joins. The manual Windows-drive strip is handled too.
+const PUBLIC_DIR = fileURLToPath(new URL('./public/', import.meta.url));
 const CONNECTABLE_PATH = new URL('./data/connectable.json', import.meta.url);
 // The raw text is served as-is to avoid re-serialising per request; LIST is the parsed copy used
 // for stats and id validation.
@@ -15,17 +20,29 @@ const CONNECTABLE_PATH = new URL('./data/connectable.json', import.meta.url);
 const CONNECTABLE = existsSync(CONNECTABLE_PATH) ? readFileSync(CONNECTABLE_PATH, 'utf8') : '[]';
 const LIST = JSON.parse(CONNECTABLE);
 const IDS = new Set(LIST.map((s) => s.name));
+// The list is frozen until restart, so compress and hash it once at startup: every request
+// then serves a cached buffer, and browsers with a matching If-None-Match get a 304.
+const CONNECTABLE_GZ = gzipSync(Buffer.from(CONNECTABLE));
+const CONNECTABLE_ETAG = `"${createHash('sha1').update(CONNECTABLE).digest('hex')}"`;
 // Stars come from data/repo-stars.json (GitHub GraphQL cache), keyed "owner/name"; connectable
 // entries hold the full GitHub URL, so normalise before looking up.
 const REPO_STARS = JSON.parse(readFileSync(new URL('./data/repo-stars.json', import.meta.url), 'utf8'));
 const GH_REPO = /^https?:\/\/(?:www\.)?github\.com\//i;
-const starsOf = (s) => (s.repo ? (REPO_STARS[s.repo.replace(GH_REPO, '').replace(/\.git$/i, '')]?.stars ?? 0) : 0);
+const repoKey = (s) => s.repo?.replace(GH_REPO, '').replace(/\.git$/i, '') ?? null;
+const starsOf = (s) => REPO_STARS[repoKey(s)]?.stars ?? 0;
+const pushedAtOf = (s) => REPO_STARS[repoKey(s)]?.pushedAt ?? null;
 // Liveness of remote endpoints, from scripts/probe-status.mjs. Absent = never probed.
 const STATUS_PATH = new URL('./data/status.json', import.meta.url);
 const STATUS = existsSync(STATUS_PATH) ? JSON.parse(readFileSync(STATUS_PATH, 'utf8')).results : {};
+// stdio package existence, from scripts/probe-packages.mjs (npm/pypi/nuget/crates registry checks).
+const PKG_PATH = new URL('./data/pkg-status.json', import.meta.url);
+const PKGS = existsSync(PKG_PATH) ? JSON.parse(readFileSync(PKG_PATH, 'utf8')).results : {};
 
-mkdirSync(new URL('./data/', import.meta.url), { recursive: true });
-const db = new DatabaseSync(new URL('./data/app.db', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1'));
+// 数据库落点：本地默认 ./data/app.db；Railway 之类平台的文件系统是易失的，
+// 挂载持久卷到别的路径（如 /appdata）后用 DB_PATH 指过去即可。
+const DB_PATH = process.env.DB_PATH ?? fileURLToPath(new URL('./data/app.db', import.meta.url));
+mkdirSync(dirname(DB_PATH), { recursive: true });
+const db = new DatabaseSync(DB_PATH);
 db.exec(`
   PRAGMA journal_mode = WAL;
   CREATE TABLE IF NOT EXISTS votes (
@@ -42,11 +59,7 @@ db.exec(`
 `);
 
 // ---- ranking ---------------------------------------------------------------
-const RATING_PRIOR_WEIGHT = 5; // phantom reviews pulling the average toward 3.5
-const RATING_PRIOR_VALUE = 3.5;
-// Engagement is normalised against a fixed target, not the observed maximum, so one vote can no
-// longer hand the first server the full 25 points. 50 weighted votes (like 1, favorite 2) = full marks.
-const ENGAGEMENT_FULL = 50;
+// 公式与常量在 lib/rank.mjs（带单测）；这里只算依赖全量列表的派生量 MAX_STARS。
 const MAX_STARS = Math.max(1, ...LIST.map(starsOf));
 
 const statsByServer = () => {
@@ -78,14 +91,13 @@ const buildStats = (visitorId) => {
     const favorites = st.favorites ?? 0;
     const engagement = likes + 2 * favorites;
     const row = { stars, likes, favorites, reviewCount: reviews };
+    // pushedAt is free from the repo-stars cache; powers the 最近活跃 sort and 弃坑 hint.
+    const pushedAt = pushedAtOf(s);
+    if (pushedAt) row.pushedAt = pushedAt;
     if (stars || engagement || reviews) {
-      const bayes = ((st.ratingSum ?? 0) + RATING_PRIOR_WEIGHT * RATING_PRIOR_VALUE) / (reviews + RATING_PRIOR_WEIGHT);
-      const starScore = stars ? Math.log10(stars + 1) / Math.log10(MAX_STARS + 1) : 0;
-      const engagementScore = Math.min(1, Math.log10(engagement + 1) / Math.log10(ENGAGEMENT_FULL + 1));
       // 没有评价就不给评分项留 30%，权重全给星标——否则所有人都白拿 21 分，名次差异被压扁。
-      // 两种情况的权重和都是 1，综合分上限始终是 100。
-      const starsWeight = reviews ? 0.45 : 0.75;
-      const score = 100 * (starsWeight * starScore + (reviews ? 0.3 * (bayes / 5) : 0) + 0.25 * engagementScore);
+      // 两种情况的权重和都是 1，综合分上限始终是 100。公式实现见 lib/rank.mjs。
+      const score = scoreOf({ stars, starsMax: MAX_STARS, reviews, ratingSum: st.ratingSum, likes, favorites });
       row.score = Number(score.toFixed(1));
       row.avgRating = reviews ? Number(((st.ratingSum ?? 0) / reviews).toFixed(2)) : null;
     }
@@ -130,11 +142,30 @@ const identify = (req, res) => {
 
 // Write throttle: 40 writes / minute / IP. Cheap in-memory sliding window.
 const hits = new Map();
+// Behind a reverse proxy every visitor shares one socket address; opt in with TRUST_PROXY=1
+// (only safe if the proxy actually sets X-Forwarded-For).
+const TRUST_PROXY = process.env.TRUST_PROXY === '1';
+const ipOf = (req) => {
+  if (TRUST_PROXY) {
+    const fwd = req.headers['x-forwarded-for'];
+    const first = typeof fwd === 'string' ? fwd.split(',')[0].trim() : '';
+    if (first) return first;
+  }
+  return req.socket.remoteAddress ?? '?';
+};
 const throttled = (ip) => {
   const now = Date.now();
+  // Timestamps are appended in order, so the last element is the newest. Table only ever
+  // grows, so prune stale IPs once it gets large instead of waiting for each to revisit.
+  if (hits.size > 10_000) {
+    for (const [k, v] of hits) {
+      if (!v.length || now - v[v.length - 1] >= 60_000) hits.delete(k);
+    }
+  }
   const recent = (hits.get(ip) ?? []).filter((t) => now - t < 60_000);
   recent.push(now);
-  hits.set(ip, recent);
+  if (!recent.length) hits.delete(ip);
+  else hits.set(ip, recent);
   return recent.length > 40;
 };
 
@@ -142,17 +173,29 @@ const throttled = (ip) => {
 const handleApi = async (req, res, url, visitorId) => {
   const parts = url.pathname.split('/').filter(Boolean); // ['api', ...]
   const body = req.method === 'POST' ? await readBody(req) : null;
-  if (req.method === 'POST' && throttled(req.socket.remoteAddress ?? '?')) {
+  if (req.method === 'POST' && throttled(ipOf(req))) {
     return fail(res, 429, '操作太频繁，请稍后再试');
   }
 
   if (req.method === 'GET' && url.pathname === '/api/stats') {
-    return json(res, 200, { ...buildStats(visitorId), status: STATUS });
+    return json(res, 200, { ...buildStats(visitorId), status: STATUS, pkg: PKGS });
   }
 
   if (req.method === 'GET' && url.pathname === '/api/connectable') {
-    res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' });
-    return res.end(CONNECTABLE);
+    if (req.headers['if-none-match'] === CONNECTABLE_ETAG) {
+      res.writeHead(304, { ETag: CONNECTABLE_ETAG });
+      return res.end();
+    }
+    const gz = String(req.headers['accept-encoding'] ?? '').includes('gzip');
+    res.writeHead(200, {
+      'Content-Type': 'application/json; charset=utf-8',
+      Vary: 'Accept-Encoding',
+      ETag: CONNECTABLE_ETAG,
+      // Not no-store: the payload is static until restart, so revalidation via ETag is cheap.
+      'Cache-Control': 'no-cache',
+      ...(gz ? { 'Content-Encoding': 'gzip', 'Content-Length': CONNECTABLE_GZ.length } : {}),
+    });
+    return res.end(gz ? CONNECTABLE_GZ : CONNECTABLE);
   }
 
   if (req.method === 'GET' && parts[1] === 'servers' && parts[3] === 'reviews') {
@@ -196,6 +239,13 @@ const handleApi = async (req, res, url, visitorId) => {
        ON CONFLICT (server_id, visitor_id) DO UPDATE SET rating=excluded.rating, text=excluded.text, updated_at=excluded.updated_at`,
     ).run(id, visitorId, rating, text, now, now);
     return json(res, 200, { serverId: id, rating, text });
+  }
+
+  if (req.method === 'DELETE' && parts[1] === 'servers' && parts[3] === 'reviews') {
+    const id = decodeURIComponent(parts[2]);
+    if (!IDS.has(id)) return fail(res, 404, 'server not found');
+    db.prepare('DELETE FROM reviews WHERE server_id = ? AND visitor_id = ?').run(id, visitorId);
+    return json(res, 200, { serverId: id, deleted: true });
   }
 
   return fail(res, 404, 'unknown endpoint');

@@ -1,7 +1,7 @@
 // Export a flat, connect-ready MCP list from the crawled official registry.
 // Output: data/connectable.json (machine) + data/connectable.md (human).
 // Run: node scripts/export-connectable.mjs
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
 const latest = new Map();
 for (const line of readFileSync('data/raw-registry.jsonl', 'utf8').split('\n')) {
@@ -14,6 +14,9 @@ for (const line of readFileSync('data/raw-registry.jsonl', 'utf8').split('\n')) 
 const officialNames = new Set(
   JSON.parse(readFileSync('data/catalog.json', 'utf8')).map((s) => s.registryName).filter(Boolean),
 );
+
+// 名字第一次被爬到的日期（crawl-registry.mjs 维护）。null = 补种时代码运行前就已存在。
+const seen = existsSync('data/first-seen.json') ? JSON.parse(readFileSync('data/first-seen.json', 'utf8')) : {};
 
 const STDIO = {
   npm: (id, v) => ({ command: 'npx', args: ['-y', v ? `${id}@${v}` : id] }),
@@ -47,6 +50,7 @@ for (const s of latest.values()) {
     repo: s.repository?.url ?? null,
     website: s.websiteUrl ?? null,
     version: s.version ?? null,
+    since: seen[s.name] ?? null, // 首次被发现日期；null = 未知（补种前就存在）
     connect,
   });
 }

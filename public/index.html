@@ -22,6 +22,7 @@
       <select id="sort">
         <option value="hot">综合分</option>
         <option value="stars">GitHub 星标</option>
+        <option value="active">最近活跃</option>
         <option value="rating">用户评分</option>
         <option value="likes">点赞 + 收藏</option>
         <option value="name">名称</option>
@@ -32,6 +33,7 @@
         <option value="stdio">本地 stdio</option>
         <option value="verified">✅ 已验证能连</option>
         <option value="official">厂商官方</option>
+        <option value="recent">🆕 最近上架（30 天）</option>
         <option value="mine">我评价/点赞过的</option>
       </select>
     </div>
@@ -67,6 +69,7 @@
       <div id="stars" class="stars" role="radiogroup" aria-label="评分"></div>
       <textarea id="review-text" maxlength="1000" rows="3" placeholder="它好用在哪？有什么坑？（可选，最多 1000 字）"></textarea>
       <button class="btn primary" type="submit">提交评价</button>
+      <button class="btn" id="review-delete" type="button" hidden>删除我的评价</button>
       <span id="review-msg" class="msg" role="status"></span>
     </form>
     <ul id="review-list" class="review-list"></ul>

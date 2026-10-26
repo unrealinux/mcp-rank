@@ -1,9 +1,15 @@
 // Probe remote MCP endpoints and cache the result to data/status.json.
-// Run: node scripts/probe-status.mjs [limit]     (default 500; already-probed entries are skipped)
+// Run: node scripts/probe-status.mjs [limit] [daily]
+//   limit  how deep below the star ranking to probe (default 500)
+//   daily  per-run cap so a cron job can drive incremental coverage
+//          (11,549 remote URLs at the default 300/day covers the set in ~5.5 weeks)
+// Entries probed within PROBE_TTL_DAYS are skipped; expired ones re-probe. Cron keeps
+// everything fresh forever, with the star-ranked entries always served first.
 // Targets = the same order the site ranks by (stars first) plus the curated vendor-official rows.
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 
 const LIMIT = Number(process.argv[2] ?? 500);
+const DAILY = Number(process.argv[3] ?? 300);
 // 4, not 25: higher concurrency exhausts local connections and reports false timeouts.
 const CONCURRENCY = 4;
 const TIMEOUT_MS = 10_000;
@@ -19,8 +25,15 @@ const targets = [...new Map([...byStars, ...list.filter((s) => s.official)].map(
   .filter((s) => s.connect.kind === 'remote' && !/\{[^}]*\}/.test(s.connect.url)); // {placeholder} URLs need manual editing
 
 const cache = existsSync(FILE) ? JSON.parse(readFileSync(FILE, 'utf8')) : { checkedAt: null, results: {} };
-const todo = targets.filter((s) => !cache.results[s.name]);
-console.error(`${targets.length} targets, ${todo.length} to probe`);
+const PROBE_TTL_MS = 30 * 24 * 3600 * 1000;
+const expired = (r) => !r || Date.now() - new Date(r.at).getTime() > PROBE_TTL_MS;
+let todo = targets.filter((s) => expired(cache.results[s.name]));
+const capped = todo.length > DAILY;
+if (capped) {
+  // 官方条目置顶（数量仅几十，稳定排序不扰其余次序），避免被日限额饿死。
+  todo = todo.sort((a, b) => Number(b.official) - Number(a.official)).slice(0, DAILY);
+}
+console.error(`${targets.length} targets, ${todo.length} to probe (new or older than ${PROBE_TTL_MS / 86_400_000}d${capped ? `, capped to daily ${DAILY}` : ''})`);
 if (!todo.length) process.exit(0);
 
 const body = JSON.stringify({
