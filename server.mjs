@@ -192,7 +192,9 @@ const handleApi = async (req, res, url, visitorId) => {
   if (req.method === 'GET' && url.pathname === '/api/connectable') {
     const part = url.searchParams.get('part');
     if (part !== null) {
+      if (!/^[0-9]+$/.test(part)) return fail(res, 400, 'part must be a non-negative integer');
       const chunk = PARTS[Number(part)];
+      // out-of-range int 仍返回空数组：客户端把空片当作“拉完”的信号，不能 400。
       if (!chunk) return json(res, 200, []);
       const gz = String(req.headers['accept-encoding'] ?? '').includes('gzip');
       res.writeHead(200, {
