@@ -24,6 +24,14 @@ const IDS = new Set(LIST.map((s) => s.name));
 // then serves a cached buffer, and browsers with a matching If-None-Match get a 304.
 const CONNECTABLE_GZ = gzipSync(Buffer.from(CONNECTABLE));
 const CONNECTABLE_ETAG = `"${createHash('sha1').update(CONNECTABLE).digest('hex')}"`;
+// Served in parts: Railway's h2 edge stalls a single multi-MB body before it reaches Chrome,
+// so /api/connectable?part=N is the only form the browser actually receives. Each part is
+// pre-serialised and pre-gzipped at startup — no per-request work.
+const PART_SIZE = 1000;
+const PARTS = Array.from({ length: Math.ceil(LIST.length / PART_SIZE) }, (_, i) => {
+  const body = Buffer.from(JSON.stringify(LIST.slice(i * PART_SIZE, (i + 1) * PART_SIZE)));
+  return { gz: gzipSync(body), raw: body };
+});
 // Stars come from data/repo-stars.json (GitHub GraphQL cache), keyed "owner/name"; connectable
 // entries hold the full GitHub URL, so normalise before looking up.
 const REPO_STARS = JSON.parse(readFileSync(new URL('./data/repo-stars.json', import.meta.url), 'utf8'));
@@ -182,6 +190,18 @@ const handleApi = async (req, res, url, visitorId) => {
   }
 
   if (req.method === 'GET' && url.pathname === '/api/connectable') {
+    const part = url.searchParams.get('part');
+    if (part !== null) {
+      const chunk = PARTS[Number(part)];
+      if (!chunk) return json(res, 200, []);
+      const gz = String(req.headers['accept-encoding'] ?? '').includes('gzip');
+      res.writeHead(200, {
+        'Content-Type': 'application/json; charset=utf-8',
+        Vary: 'Accept-Encoding',
+        ...(gz ? { 'Content-Encoding': 'gzip' } : {}),
+      });
+      return res.end(gz ? chunk.gz : chunk.raw);
+    }
     if (req.headers['if-none-match'] === CONNECTABLE_ETAG) {
       res.writeHead(304, { ETag: CONNECTABLE_ETAG });
       return res.end();
@@ -258,7 +278,8 @@ const serveStatic = (req, res, pathname) => {
   const file = join(PUBLIC_DIR, rel === '' ? 'index.html' : rel);
   if (!normalize(file).startsWith(normalize(PUBLIC_DIR))) return fail(res, 403, 'forbidden');
   if (!existsSync(file)) return fail(res, 404, 'not found');
-  res.writeHead(200, { 'Content-Type': MIME[extname(file)] ?? 'application/octet-stream' });
+  // no-cache + must-revalidate: 没有这两个头 Chrome 会启发式缓存旧 app.js，改完前端看不到变化。
+  res.writeHead(200, { 'Content-Type': MIME[extname(file)] ?? 'application/octet-stream', 'Cache-Control': 'no-cache' });
   res.end(readFileSync(file));
 };
 

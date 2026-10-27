@@ -1,5 +1,6 @@
 // 可接入 MCP 列表前端。
-// /api/connectable —— 全量静态列表（13k 条，5.9MB），只拉一次。
+// /api/connectable?part=N —— 全量静态列表（13k 条，5.9MB），服务端切成 1000 条一片依次拉。
+// （单次 5.9MB 在 Railway h2 边缘会卡死，必须分片。）
 // /api/stats      —— 每条的分数/点赞/评分（只有有信号的条目），投票后只需重拉这个。
 const $ = (sel) => document.querySelector(sel);
 const CAP = 300; // DOM 行数上限，超过必须靠搜索缩小
@@ -391,15 +392,39 @@ async function loadStats() {
   render();
 }
 
+// 首屏只要第一批（1000 条）就够渲染 300 行，剩下的分片后台补齐后才供搜索使用。
 async function load() {
-  const [list, stats] = await Promise.all([api('/api/connectable'), api('/api/stats')]);
-  state.list = list;
+  const [first, stats] = await Promise.all([api('/api/connectable?part=0'), api('/api/stats')]);
+  state.list = first;
   state.stats = stats.stats;
   state.status = stats.status ?? {};
   state.pkg = stats.pkg ?? {};
   invalidateRows();
   const probed = Object.keys(state.status).length;
   $('#meta').textContent = `数据更新：${new Date(stats.updatedAt).toLocaleString('zh-CN')}　接入可用性已抽检 ${probed} 条`;
+  render();
+  fillRest();
+}
+
+async function fillRest() {
+  // 4 路并发：中国到 sjc1 单请求 ~1s RTT，串行拉 13 片要 30s。
+  let next = 1;
+  const worker = async () => {
+    for (;;) {
+      const i = next;
+      next += 1;
+      let part;
+      try {
+        part = await api(`/api/connectable?part=${i}`);
+      } catch {
+        return; // 后台补齐失败就保持首批可用的状态，搜索范围变小但不影响浏览
+      }
+      if (!part.length) return;
+      state.list = state.list.concat(part);
+    }
+  };
+  await Promise.all([worker(), worker(), worker(), worker()]);
+  invalidateRows();
   render();
 }
 
